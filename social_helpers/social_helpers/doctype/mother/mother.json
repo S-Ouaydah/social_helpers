@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name} {middle_name} {last_name}",
+ "creation": "2023-05-12 11:02:46.259751",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_name",
+  "last_name",
+  "nationality",
+  "education_level",
+  "column_break_mmpsm",
+  "social_status",
+  "work",
+  "what_is_her_job",
+  "salary",
+  "care_period",
+  "religion_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalestinian"
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Data",
+   "label": "Education level"
+  },
+  {
+   "fieldname": "column_break_mmpsm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "social_status",
+   "fieldtype": "Select",
+   "label": "Social Status",
+   "options": "Widow\nDead\nMarried"
+  },
+  {
+   "depends_on": "does_she_work",
+   "fieldname": "what_is_her_job",
+   "fieldtype": "Data",
+   "label": "What is her job"
+  },
+  {
+   "depends_on": "does_she_work",
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "care_period",
+   "fieldtype": "Select",
+   "label": "Care period",
+   "options": "continuous\ndiscontinuous"
+  },
+  {
+   "fieldname": "religion_status",
+   "fieldtype": "Data",
+   "label": "Religion status"
+  },
+  {
+   "default": "0",
+   "fieldname": "work",
+   "fieldtype": "Check",
+   "label": "Work"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-13 10:49:43.209420",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Mother",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

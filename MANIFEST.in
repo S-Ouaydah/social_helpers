@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include social_helpers *.css
+recursive-include social_helpers *.csv
+recursive-include social_helpers *.html
+recursive-include social_helpers *.ico
+recursive-include social_helpers *.js
+recursive-include social_helpers *.json
+recursive-include social_helpers *.md
+recursive-include social_helpers *.png
+recursive-include social_helpers *.py
+recursive-include social_helpers *.svg
+recursive-include social_helpers *.txt
+recursive-exclude social_helpers *.pyc

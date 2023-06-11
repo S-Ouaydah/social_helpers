@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name} {middle_name} {last_name}",
+ "creation": "2023-05-07 10:40:34.228115",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_for_adminstration_section",
+  "form_number",
+  "orphan_info_section",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "nationality_orphan",
+  "date_of_birth_orphan",
+  "place_of_birth_orphan",
+  "social_number_orphan",
+  "gender",
+  "orphan_type",
+  "column_break_kczdl",
+  "health_condition",
+  "chronic_diseases",
+  "type_of_disease",
+  "education",
+  "school_name",
+  "cycle",
+  "grade",
+  "school_tuition",
+  "hobbies",
+  "father_info_section",
+  "father",
+  "mother_info_section",
+  "mother"
+ ],
+ "fields": [
+  {
+   "fieldname": "father",
+   "fieldtype": "Link",
+   "label": "Father",
+   "options": "Father"
+  },
+  {
+   "fieldname": "mother",
+   "fieldtype": "Link",
+   "label": "Mother",
+   "options": "Mother"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "father_info_section",
+   "fieldtype": "Section Break",
+   "label": "Father info"
+  },
+  {
+   "fieldname": "mother_info_section",
+   "fieldtype": "Section Break",
+   "label": "Mother info"
+  },
+  {
+   "fieldname": "nationality_orphan",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalistinian"
+  },
+  {
+   "fieldname": "orphan_info_section",
+   "fieldtype": "Section Break",
+   "label": "Orphan info"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth_orphan",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "place_of_birth_orphan",
+   "fieldtype": "Data",
+   "label": "Place of birth"
+  },
+  {
+   "fieldname": "social_number_orphan",
+   "fieldtype": "Data",
+   "label": "Social number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "orphan_type",
+   "fieldtype": "Select",
+   "label": "Orphan type",
+   "options": "Orphan\nParental orphan"
+  },
+  {
+   "fieldname": "health_condition",
+   "fieldtype": "Select",
+   "label": "Health condition",
+   "options": "Good\nBad"
+  },
+  {
+   "default": "0",
+   "fieldname": "chronic_diseases",
+   "fieldtype": "Check",
+   "label": "Chronic diseases"
+  },
+  {
+   "depends_on": "chronic_diseases",
+   "fieldname": "type_of_disease",
+   "fieldtype": "Small Text",
+   "label": "Type of disease"
+  },
+  {
+   "fieldname": "column_break_kczdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School name"
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Data",
+   "label": "Cycle"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "school_tuition",
+   "fieldtype": "Currency",
+   "label": "School tuition"
+  },
+  {
+   "fieldname": "hobbies",
+   "fieldtype": "Data",
+   "label": "Hobbies"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Select",
+   "label": "Education",
+   "options": "Study\nDon't study\nUnder school age"
+  },
+  {
+   "fieldname": "section_for_adminstration_section",
+   "fieldtype": "Section Break",
+   "label": "Section for adminstration"
+  },
+  {
+   "fieldname": "form_number",
+   "fieldtype": "Autocomplete",
+   "label": "Form number",
+   "options": "{########}"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Studies",
+   "link_doctype": "Finacial Study",
+   "link_fieldname": "orphan"
+  }
+ ],
+ "modified": "2023-05-13 12:15:55.446756",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Orphan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
