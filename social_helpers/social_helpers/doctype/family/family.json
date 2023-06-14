@@ -1,0 +1,308 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-11 12:14:29.094379",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members",
+  "debt",
+  "debt_section",
+  "total_ammount",
+  "monthly_ammount",
+  "reason",
+  "lender",
+  "address_section",
+  "city",
+  "zone",
+  "street",
+  "near",
+  "column_break_ix0vh",
+  "building",
+  "floor",
+  "mobile_num",
+  "phone_num",
+  "column_break_cas47",
+  "ownership_status",
+  "description",
+  "rent_price",
+  "room_num",
+  "status",
+  "section_break_dpfaw",
+  "comment_explanation",
+  "comments",
+  "mou3il_section",
+  "the_mou3il",
+  "moustawa_l_ri3aya",
+  "ri3aye_duration",
+  "religion_status_section",
+  "dourous_3lm_shar3i",
+  "details1",
+  "mou7aramet_zahira_2a8ani_tabaroj_soufour",
+  "details2",
+  "dawrat_diniye",
+  "details3",
+  "other_institution",
+  "details4",
+  "section_break_fsnyr",
+  "filler_comments",
+  "financial_study"
+ ],
+ "fields": [
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Family Members"
+  },
+  {
+   "default": "0",
+   "fieldname": "debt",
+   "fieldtype": "Check",
+   "label": "Debt"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "debt_section",
+   "fieldtype": "Section Break",
+   "label": "Debt"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "total_ammount",
+   "fieldtype": "Currency",
+   "label": "Total Ammount"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "monthly_ammount",
+   "fieldtype": "Currency",
+   "label": "Monthly Ammount "
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "lender",
+   "fieldtype": "Data",
+   "label": "Lender"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address "
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "Tripoli\nBeirut\nSayda"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "near",
+   "fieldtype": "Data",
+   "label": "Near"
+  },
+  {
+   "fieldname": "column_break_ix0vh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Data",
+   "label": "Building"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Int",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "mobile_num",
+   "fieldtype": "Phone",
+   "label": "Mobile Num"
+  },
+  {
+   "fieldname": "phone_num",
+   "fieldtype": "Phone",
+   "label": "Phone Num"
+  },
+  {
+   "fieldname": "column_break_cas47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership_status",
+   "fieldtype": "Select",
+   "label": "Ownership Status",
+   "options": "Owned\nRented\nOther"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "rent_price",
+   "fieldtype": "Currency",
+   "label": "Rent Price"
+  },
+  {
+   "fieldname": "room_num",
+   "fieldtype": "Int",
+   "label": "Room Num"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Very Bad\nBad\nOk\nGood\nVery Good"
+  },
+  {
+   "fieldname": "section_break_dpfaw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comment_explanation",
+   "fieldtype": "HTML",
+   "label": "Comment Explanation",
+   "options": "<h6>Filler comments about house status</h6>"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text Editor",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "mou3il_section",
+   "fieldtype": "Section Break",
+   "label": "Mou3il "
+  },
+  {
+   "fieldname": "the_mou3il",
+   "fieldtype": "Link",
+   "label": "The Mou3il",
+   "options": "Person"
+  },
+  {
+   "fieldname": "moustawa_l_ri3aya",
+   "fieldtype": "Select",
+   "label": "Moustawa l ri3aya",
+   "options": "Ok\nNes Nes\nVery Good"
+  },
+  {
+   "fieldname": "ri3aye_duration",
+   "fieldtype": "Select",
+   "label": "Ri3aye Duration",
+   "options": "Moustamera\nMoutakati3a"
+  },
+  {
+   "fieldname": "religion_status_section",
+   "fieldtype": "Section Break",
+   "label": "Religion Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "dourous_3lm_shar3i",
+   "fieldtype": "Check",
+   "label": "Dourous 3lm shar3i"
+  },
+  {
+   "depends_on": "dourous_3lm_shar3i",
+   "fieldname": "details1",
+   "fieldtype": "Text",
+   "label": "Details1"
+  },
+  {
+   "default": "0",
+   "fieldname": "mou7aramet_zahira_2a8ani_tabaroj_soufour",
+   "fieldtype": "Check",
+   "label": "Mou7aramet zahira (2a8ani, tabaroj, soufour)"
+  },
+  {
+   "depends_on": "mou7aramet_zahira_2a8ani_tabaroj_soufour",
+   "fieldname": "details2",
+   "fieldtype": "Text",
+   "label": "Details2"
+  },
+  {
+   "default": "0",
+   "fieldname": "dawrat_diniye",
+   "fieldtype": "Check",
+   "label": "Dawrat diniye"
+  },
+  {
+   "depends_on": "dawrat_diniye",
+   "fieldname": "details3",
+   "fieldtype": "Text",
+   "label": "Details3"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_institution",
+   "fieldtype": "Check",
+   "label": "Other institution"
+  },
+  {
+   "depends_on": "other_institution",
+   "fieldname": "details4",
+   "fieldtype": "Data",
+   "label": "Details4"
+  },
+  {
+   "fieldname": "section_break_fsnyr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "filler_comments",
+   "fieldtype": "Text Editor",
+   "label": "Filler Comments"
+  },
+  {
+   "fieldname": "financial_study",
+   "fieldtype": "Table",
+   "label": "Financial Study",
+   "options": "Financial studies"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-11 12:14:29.094379",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Family",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

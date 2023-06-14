@@ -9,9 +9,9 @@ from social_helpers import __version__ as version
 setup(
 	name="social_helpers",
 	version=version,
-	description="Orphans applications and families help",
+	description="Orphans applications and Social helping!",
 	author="muslims IT",
-	author_email="ismail.ouaydah@gmail.com",
+	author_email="S.ouaydah@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
