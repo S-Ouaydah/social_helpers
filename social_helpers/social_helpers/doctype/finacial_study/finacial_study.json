@@ -10,7 +10,18 @@
  "field_order": [
   "orphan",
   "date",
-  "total"
+  "fixed_payments_section",
+  "house_rent",
+  "value",
+  "monthly_expenses_section",
+  "food",
+  "cloth",
+  "transport",
+  "column_break_rrar",
+  "gas",
+  "electricity_bill",
+  "house_expenses",
+  "monthly_expenses_sum"
  ],
  "fields": [
   {
@@ -25,14 +36,71 @@
    "label": "Date"
   },
   {
-   "fieldname": "total",
+   "fieldname": "fixed_payments_section",
+   "fieldtype": "Section Break",
+   "label": "Fixed Payments"
+  },
+  {
+   "fieldname": "house_rent",
+   "fieldtype": "Select",
+   "label": "House rent",
+   "options": "Monthly\nYearly"
+  },
+  {
+   "fieldname": "value",
    "fieldtype": "Currency",
-   "label": "Total"
+   "label": "Value"
+  },
+  {
+   "fieldname": "monthly_expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Monthly Expenses"
+  },
+  {
+   "fieldname": "food",
+   "fieldtype": "Currency",
+   "label": "Food"
+  },
+  {
+   "fieldname": "cloth",
+   "fieldtype": "Currency",
+   "label": "Cloth"
+  },
+  {
+   "fieldname": "transport",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "fieldname": "column_break_rrar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gas",
+   "fieldtype": "Currency",
+   "label": "Gas"
+  },
+  {
+   "fieldname": "electricity_bill",
+   "fieldtype": "Currency",
+   "label": "Electricity bill"
+  },
+  {
+   "fieldname": "house_expenses",
+   "fieldtype": "Currency",
+   "label": "House expenses"
+  },
+  {
+   "fieldname": "monthly_expenses_sum",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Monthly Expenses Sum",
+   "options": "doc.food + doc.cloth + doc.transport + doc.gas + doc.electricity_bill + doc.house_expenses"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-12 12:12:22.626799",
+ "modified": "2023-06-15 02:27:40.573924",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Finacial Study",

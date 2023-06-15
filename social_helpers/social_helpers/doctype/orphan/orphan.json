@@ -59,8 +59,6 @@
   "column_break_lgop",
   "status",
   "filler_comment_on_house_status",
-  "sponsorship_info_section",
-  "sponsor",
   "provider_info_section",
   "general_info_about_the_family_section",
   "debt",
@@ -352,11 +350,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "sponsorship_info_section",
-   "fieldtype": "Section Break",
-   "label": "Sponsorship Info"
-  },
-  {
    "fieldname": "provider_info_section",
    "fieldtype": "Section Break",
    "label": "Provider Info"
@@ -454,12 +447,6 @@
    "label": "Does the orphan go to other organization"
   },
   {
-   "fieldname": "sponsor",
-   "fieldtype": "Link",
-   "label": "Sponsor",
-   "options": "Sponsorship"
-  },
-  {
    "fieldname": "column_break_rhz3",
    "fieldtype": "Column Break"
   }
@@ -477,7 +464,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-14 23:34:13.296244",
+ "modified": "2023-06-15 02:50:58.371077",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
