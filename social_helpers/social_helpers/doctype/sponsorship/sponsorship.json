@@ -9,20 +9,11 @@
  "field_order": [
   "orphan",
   "sponsor_info_section",
-  "first_name_s",
-  "middle_name_s",
-  "last_name_s",
-  "address_s",
-  "column_break_ha1m",
-  "street_s",
-  "building_s",
-  "floor_s",
-  "phone_number_s",
-  "mobile_number_s",
-  "sponsors_comments_and_decision",
+  "sponsor",
   "section_break_ghrs",
   "who_chose_the_orphan",
   "sponsorship_value",
+  "column_break_ef9k",
   "start_date",
   "sponsorship_duration",
   "end_date"
@@ -37,7 +28,7 @@
    "fieldname": "who_chose_the_orphan",
    "fieldtype": "Select",
    "label": "Who chose the orphan",
-   "options": "Sponsor\nNamaa organization"
+   "options": "Sponsor\nNamaa organization\nNGO"
   },
   {
    "fieldname": "sponsorship_value",
@@ -49,60 +40,6 @@
    "fieldtype": "Select",
    "label": "Sponsorship Duration",
    "options": "Monthly\nYearly"
-  },
-  {
-   "fieldname": "column_break_ha1m",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sponsors_comments_and_decision",
-   "fieldtype": "Long Text",
-   "label": "Sponsor's comments and decision"
-  },
-  {
-   "fieldname": "first_name_s",
-   "fieldtype": "Data",
-   "label": "First name"
-  },
-  {
-   "fieldname": "middle_name_s",
-   "fieldtype": "Data",
-   "label": "Middle name"
-  },
-  {
-   "fieldname": "last_name_s",
-   "fieldtype": "Data",
-   "label": "Last name"
-  },
-  {
-   "fieldname": "address_s",
-   "fieldtype": "Data",
-   "label": "Address"
-  },
-  {
-   "fieldname": "street_s",
-   "fieldtype": "Data",
-   "label": "Street"
-  },
-  {
-   "fieldname": "building_s",
-   "fieldtype": "Data",
-   "label": "Building"
-  },
-  {
-   "fieldname": "floor_s",
-   "fieldtype": "Data",
-   "label": "Floor"
-  },
-  {
-   "fieldname": "phone_number_s",
-   "fieldtype": "Phone",
-   "label": "Phone number"
-  },
-  {
-   "fieldname": "mobile_number_s",
-   "fieldtype": "Phone",
-   "label": "Mobile number"
   },
   {
    "fieldname": "section_break_ghrs",
@@ -123,11 +60,21 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End date"
+  },
+  {
+   "fieldname": "sponsor",
+   "fieldtype": "Link",
+   "label": "Sponsor",
+   "options": "Sponsor"
+  },
+  {
+   "fieldname": "column_break_ef9k",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-14 23:32:20.139604",
+ "modified": "2023-06-15 20:37:04.747308",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsorship",

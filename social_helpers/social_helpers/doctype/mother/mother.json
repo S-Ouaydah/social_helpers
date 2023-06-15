@@ -11,9 +11,11 @@
   "first_name",
   "middle_name",
   "last_name",
+  "date_of_birth_mother",
+  "place_of_birth_mother",
   "nationality",
-  "education_level",
   "column_break_mmpsm",
+  "education_level",
   "social_status",
   "work",
   "what_is_her_job",
@@ -65,13 +67,13 @@
    "options": "Widow\nDead\nMarried"
   },
   {
-   "depends_on": "does_she_work",
+   "depends_on": "work",
    "fieldname": "what_is_her_job",
    "fieldtype": "Data",
    "label": "What is her job"
   },
   {
-   "depends_on": "does_she_work",
+   "depends_on": "work",
    "fieldname": "salary",
    "fieldtype": "Currency",
    "label": "Salary"
@@ -92,11 +94,21 @@
    "fieldname": "work",
    "fieldtype": "Check",
    "label": "Work"
+  },
+  {
+   "fieldname": "date_of_birth_mother",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "place_of_birth_mother",
+   "fieldtype": "Data",
+   "label": "Place of birth"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-13 10:49:43.209420",
+ "modified": "2023-06-16 00:34:58.464286",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Mother",

@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name_provider} {middle_name_provider} {last_name_provider}",
+ "creation": "2023-06-15 13:32:05.050328",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name_provider",
+  "middle_name_provider",
+  "last_name_provider",
+  "date_of_birth_provider",
+  "place_of_birth_provider",
+  "mothers_name_provider",
+  "column_break_7zby",
+  "nationality_provider",
+  "relation_to_orphan",
+  "social_status_provider",
+  "number_of_children",
+  "work_type",
+  "education_level_provider",
+  "column_break_ejsc",
+  "monthly_income",
+  "care_level_provider",
+  "financial_value_provided_monthly",
+  "care_period_provider",
+  "religion_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name_provider",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "middle_name_provider",
+   "fieldtype": "Data",
+   "label": "Middle name"
+  },
+  {
+   "fieldname": "last_name_provider",
+   "fieldtype": "Data",
+   "label": "Last name "
+  },
+  {
+   "fieldname": "date_of_birth_provider",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "place_of_birth_provider",
+   "fieldtype": "Data",
+   "label": "Place of birth"
+  },
+  {
+   "fieldname": "mothers_name_provider",
+   "fieldtype": "Data",
+   "label": "Mother's name"
+  },
+  {
+   "fieldname": "nationality_provider",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalestinian"
+  },
+  {
+   "fieldname": "relation_to_orphan",
+   "fieldtype": "Data",
+   "label": "Relation to orphan"
+  },
+  {
+   "fieldname": "social_status_provider",
+   "fieldtype": "Select",
+   "label": "Social status",
+   "options": "Single\nMarried\nWidower / Widow"
+  },
+  {
+   "fieldname": "number_of_children",
+   "fieldtype": "Int",
+   "label": "Number of children"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Data",
+   "label": "Work type"
+  },
+  {
+   "fieldname": "education_level_provider",
+   "fieldtype": "Data",
+   "label": "Education level"
+  },
+  {
+   "fieldname": "monthly_income",
+   "fieldtype": "Currency",
+   "label": "Monthly income"
+  },
+  {
+   "fieldname": "care_period_provider",
+   "fieldtype": "Select",
+   "label": "Care period",
+   "options": "continuous\ndiscontinuous"
+  },
+  {
+   "fieldname": "religion_status",
+   "fieldtype": "Data",
+   "label": "Religion status"
+  },
+  {
+   "fieldname": "care_level_provider",
+   "fieldtype": "Select",
+   "label": "Care level",
+   "options": "okay\ngood\nvery good"
+  },
+  {
+   "fieldname": "financial_value_provided_monthly",
+   "fieldtype": "Currency",
+   "label": "Financial value provided monthly"
+  },
+  {
+   "fieldname": "column_break_7zby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ejsc",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-15 13:45:54.655893",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Provider",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

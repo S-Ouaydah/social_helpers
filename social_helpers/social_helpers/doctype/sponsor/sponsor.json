@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name_s} {middle_name_s} {last_name_s}",
+ "creation": "2023-06-15 20:28:21.511935",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name_s",
+  "middle_name_s",
+  "last_name_s",
+  "address_s",
+  "column_break_ha1m",
+  "street_s",
+  "building_s",
+  "floor_s",
+  "phone_number_s",
+  "mobile_number_s",
+  "section_break_cb48",
+  "sponsor_conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name_s",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "middle_name_s",
+   "fieldtype": "Data",
+   "label": "Middle name"
+  },
+  {
+   "fieldname": "last_name_s",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "address_s",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_ha1m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street_s",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "building_s",
+   "fieldtype": "Data",
+   "label": "Building"
+  },
+  {
+   "fieldname": "floor_s",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "phone_number_s",
+   "fieldtype": "Phone",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "mobile_number_s",
+   "fieldtype": "Phone",
+   "label": "Mobile number"
+  },
+  {
+   "fieldname": "section_break_cb48",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sponsor_conditions",
+   "fieldtype": "Text",
+   "label": "Sponsor Conditions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-15 20:31:31.953566",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Sponsor",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
