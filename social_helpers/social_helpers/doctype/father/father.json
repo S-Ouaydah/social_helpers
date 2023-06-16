@@ -63,7 +63,7 @@
   {
    "fieldname": "place_of_birth",
    "fieldtype": "Data",
-   "label": "Place of Birth"
+   "label": "Place of birth"
   },
   {
    "fieldname": "social_number",
@@ -78,7 +78,7 @@
   {
    "fieldname": "date_of_death",
    "fieldtype": "Date",
-   "label": "Date of Death"
+   "label": "Date of death"
   },
   {
    "fieldname": "number_of_family_members",
@@ -111,7 +111,7 @@
    "fieldname": "death_cause",
    "fieldtype": "Select",
    "label": "Death cause",
-   "options": "accident\nillness\nnatural\nother"
+   "options": "accident\nillness\nnatural death\nother"
   },
   {
    "depends_on": "death_cause",
@@ -126,7 +126,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-13 09:22:24.018503",
+ "modified": "2023-06-16 15:17:04.177446",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Father",
