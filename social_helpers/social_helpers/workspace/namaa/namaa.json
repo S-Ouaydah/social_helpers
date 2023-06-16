@@ -1,0 +1,65 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"ixfcfG9uaz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa</span>\",\"col\":12}},{\"id\":\"4EDwzcCy_n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Orphan\",\"col\":3}},{\"id\":\"9xvvHeKbqj\",\"type\":\"card\",\"data\":{\"card_name\":\"Family\",\"col\":4}}]",
+ "creation": "2023-06-11 22:10:38.867310",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Namaa",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Family",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fathers",
+   "link_count": 0,
+   "link_to": "Father",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mothers",
+   "link_count": 0,
+   "link_to": "Mother",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-06-16 19:44:10.034172",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Namaa",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "New Orphan",
+   "link_to": "Orphan",
+   "type": "DocType"
+  }
+ ],
+ "title": "Namaa"
+}
