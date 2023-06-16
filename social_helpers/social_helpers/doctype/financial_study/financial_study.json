@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "orphan",
+  "family",
   "date",
   "fixed_payments_section",
   "house_rent",
@@ -96,11 +97,17 @@
    "is_virtual": 1,
    "label": "Monthly Expenses Sum",
    "options": "doc.food + doc.cloth + doc.transport + doc.gas + doc.electricity_bill + doc.house_expenses"
+  },
+  {
+   "fieldname": "family",
+   "fieldtype": "Link",
+   "label": "Family",
+   "options": "Orphans Family"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-15 02:27:40.573924",
+ "modified": "2023-06-16 13:33:02.608826",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Financial Study",

@@ -23,7 +23,7 @@
   "education_level_provider",
   "column_break_ejsc",
   "monthly_income",
-  "care_level_provider",
+  "care_level_provid",
   "financial_value_provided_monthly",
   "care_period_provider",
   "religion_status"
@@ -42,7 +42,7 @@
   {
    "fieldname": "last_name_provider",
    "fieldtype": "Data",
-   "label": "Last name "
+   "label": "Last name"
   },
   {
    "fieldname": "date_of_birth_provider",
@@ -108,12 +108,6 @@
    "label": "Religion status"
   },
   {
-   "fieldname": "care_level_provider",
-   "fieldtype": "Select",
-   "label": "Care level",
-   "options": "okay\ngood\nvery good"
-  },
-  {
    "fieldname": "financial_value_provided_monthly",
    "fieldtype": "Currency",
    "label": "Financial value provided monthly"
@@ -125,11 +119,16 @@
   {
    "fieldname": "column_break_ejsc",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "care_level_provid",
+   "fieldtype": "Rating",
+   "label": "Care level"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-15 13:45:54.655893",
+ "modified": "2023-06-16 15:05:54.445158",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Provider",
