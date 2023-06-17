@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-06-17 21:00:59.578011",
+ "date_changed": "end_date",
+ "days_in_advance": 7,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Sponsorship",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Please review the sponsorship ad contact the sponsor",
+ "modified": "2023-06-17 21:00:59.578011",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Sponsorship Expiry Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "",
+ "subject": "{{doc.orphan}}'s sponsorship is ending in 1 week"
+}

@@ -1,0 +1,27 @@
+{
+ "cards": [
+  {
+   "card": "Active Sponsorsips"
+  },
+  {
+   "card": "About To Expire"
+  }
+ ],
+ "charts": [
+  {
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-06-17 14:19:32.256224",
+ "dashboard_name": "Sponsorship Status",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-06-17 14:27:52.221092",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Sponsorship Status",
+ "owner": "Administrator"
+}

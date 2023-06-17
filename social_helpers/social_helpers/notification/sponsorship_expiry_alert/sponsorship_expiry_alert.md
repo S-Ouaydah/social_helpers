@@ -1,0 +1,1 @@
+Please review the sponsorship ad contact the sponsor
