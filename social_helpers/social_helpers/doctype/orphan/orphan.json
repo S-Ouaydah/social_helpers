@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{first_name} {middle_name} {last_name}",
  "creation": "2023-05-07 10:40:34.228115",
@@ -51,15 +52,13 @@
   "mother_info_section",
   "mother",
   "family_tab",
-  "family_details",
   "house_status_section",
-  "column_break_lgop",
-  "house_status",
-  "filler_comment_on_house_status",
-  "column_break_kpbb",
-  "ownership",
-  "precise_situation",
+  "situation",
+  "precise_status",
   "monthly_rent_price",
+  "column_break_lgop",
+  "status",
+  "filler_comment_on_house_status",
   "general_info_about_the_family_section",
   "debt",
   "debt_ammount",
@@ -106,7 +105,7 @@
    "fieldname": "nationality_orphan",
    "fieldtype": "Select",
    "label": "Nationality",
-   "options": "Lebanese\nSyrian\nPalestinian"
+   "options": "Lebanese\nSyrian\nPalistinian"
   },
   {
    "fieldname": "orphan_info_section",
@@ -267,14 +266,14 @@
    "label": "House Status"
   },
   {
-   "depends_on": "eval:doc.ownership == 'rented'",
+   "depends_on": "eval:doc.situation == 'rent'",
    "fieldname": "monthly_rent_price",
    "fieldtype": "Currency",
    "label": "Monthly rent price"
   },
   {
    "fieldname": "filler_comment_on_house_status",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "label": "Filler comment on house status"
   },
   {
@@ -370,7 +369,8 @@
   },
   {
    "fieldname": "filler_comments",
-   "fieldtype": "Long Text"
+   "fieldtype": "Long Text",
+   "label": "Filler comments"
   },
   {
    "default": "0",
@@ -426,7 +426,7 @@
   {
    "fieldname": "filler_comment_tab",
    "fieldtype": "Tab Break",
-   "label": "Filler comments"
+   "label": "Filler comment"
   },
   {
    "fieldname": "mother_info_section",
@@ -447,41 +447,22 @@
    "options": "Provider"
   },
   {
-   "depends_on": "eval:doc.ownership == 'other'",
-   "fieldname": "precise_situation",
-   "fieldtype": "Small Text",
-   "label": "Precise Situation"
-  },
-  {
-   "fieldname": "column_break_kpbb",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ownership",
+   "fieldname": "situation",
    "fieldtype": "Select",
-   "label": "Ownership",
-   "options": "owned\nrented\nother"
+   "label": "Situation",
+   "options": "ownership\nrent\nother"
   },
   {
-   "fieldname": "house_status",
-   "fieldtype": "Rating"
+   "depends_on": "eval:doc.situation == 'other'",
+   "fieldname": "precise_status",
+   "fieldtype": "Small Text",
+   "label": "Precise status"
   },
   {
-   "fieldname": "family_details",
-   "fieldtype": "Link",
-   "label": "Family details",
-   "options": "Orphans Family"
-  },
-  {
-   "fieldname": "administration_comments",
-   "fieldtype": "Text",
-   "label": "Administration comments"
-  },
-  {
-   "fieldname": "id_photo",
-   "fieldtype": "Attach Image",
-   "hidden": 1,
-   "label": "ID photo"
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "bad\nokay\ngood\nvery good"
   }
  ],
  "image_field": "id_photo",
@@ -503,7 +484,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-18 01:21:58.978497",
+ "modified": "2023-06-17 22:09:57.266864",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
