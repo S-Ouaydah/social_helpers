@@ -18,19 +18,22 @@
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "First name"
+   "label": "First name",
+   "translatable": 1
   },
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Middle name"
+   "label": "Middle name",
+   "translatable": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Last name"
+   "label": "Last name",
+   "translatable": 1
   },
   {
    "fieldname": "birth_date",
@@ -42,13 +45,14 @@
    "fieldname": "relation",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Relation"
+   "label": "Relation",
+   "translatable": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-06-18 01:50:48.938353",
+ "modified": "2023-06-18 02:38:02.805883",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Relatives",

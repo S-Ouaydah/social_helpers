@@ -53,7 +53,6 @@
   "family_tab",
   "family_details",
   "house_status_section",
-  "column_break_lgop",
   "house_status",
   "filler_comment_on_house_status",
   "column_break_kpbb",
@@ -283,10 +282,6 @@
    "label": "Administration decision"
   },
   {
-   "fieldname": "column_break_lgop",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "provider_info_section",
    "fieldtype": "Section Break",
    "label": "Provider Info"
@@ -503,7 +498,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-18 01:21:58.978497",
+ "modified": "2023-06-18 02:44:33.638384",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
