@@ -11,13 +11,17 @@
   "first_name_s",
   "middle_name_s",
   "last_name_s",
-  "address_s",
   "column_break_ha1m",
+  "email",
+  "mobile_number_s",
+  "phone_number_s",
+  "address_s",
+  "country",
+  "city",
   "street_s",
+  "column_break_zavf",
   "building_s",
   "floor_s",
-  "phone_number_s",
-  "mobile_number_s",
   "section_break_cb48",
   "sponsor_conditions"
  ],
@@ -39,7 +43,7 @@
   },
   {
    "fieldname": "address_s",
-   "fieldtype": "Data",
+   "fieldtype": "Section Break",
    "label": "Address"
   },
   {
@@ -79,11 +83,30 @@
    "fieldname": "sponsor_conditions",
    "fieldtype": "Text",
    "label": "Sponsor Conditions"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_zavf",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-15 20:31:31.953566",
+ "modified": "2023-06-18 00:00:57.576187",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsor",

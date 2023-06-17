@@ -12,7 +12,9 @@
   "mother",
   "column_break_hjma",
   "children",
-  "provider"
+  "provider",
+  "section_break_nifx",
+  "relatives"
  ],
  "fields": [
   {
@@ -42,6 +44,16 @@
    "fieldtype": "Link",
    "label": "Provider",
    "options": "Provider"
+  },
+  {
+   "fieldname": "relatives",
+   "fieldtype": "Table",
+   "label": "Relatives",
+   "options": "Relatives"
+  },
+  {
+   "fieldname": "section_break_nifx",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -52,7 +64,7 @@
    "link_fieldname": "family"
   }
  ],
- "modified": "2023-06-16 20:58:06.452664",
+ "modified": "2023-06-18 01:40:33.587719",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphans Family",

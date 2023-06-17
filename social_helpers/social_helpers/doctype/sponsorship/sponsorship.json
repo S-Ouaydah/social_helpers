@@ -12,10 +12,9 @@
   "sponsor",
   "section_break_ghrs",
   "who_chose_the_orphan",
-  "sponsorship_value",
+  "amount",
   "column_break_ef9k",
   "start_date",
-  "sponsorship_duration",
   "end_date"
  ],
  "fields": [
@@ -29,17 +28,6 @@
    "fieldtype": "Select",
    "label": "Who chose the orphan",
    "options": "Sponsor\nNamaa organization\nNGO"
-  },
-  {
-   "fieldname": "sponsorship_value",
-   "fieldtype": "Currency",
-   "label": "Sponsorship value"
-  },
-  {
-   "fieldname": "sponsorship_duration",
-   "fieldtype": "Select",
-   "label": "Sponsorship Duration",
-   "options": "Monthly\nYearly"
   },
   {
    "fieldname": "section_break_ghrs",
@@ -70,11 +58,16 @@
   {
    "fieldname": "column_break_ef9k",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-15 20:37:04.747308",
+ "modified": "2023-06-17 23:51:11.001939",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsorship",

@@ -1,0 +1,20 @@
+{
+ "action": "Create Entry",
+ "action_label": "Add Orphan",
+ "creation": "2023-06-16 23:15:27.051405",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2023-06-16 23:17:36.419188",
+ "modified_by": "Administrator",
+ "name": "step 1",
+ "owner": "Administrator",
+ "reference_document": "Orphan",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Add Orphan",
+ "validate_action": 1
+}

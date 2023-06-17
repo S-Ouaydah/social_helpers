@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"ixfcfG9uaz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa</span>\",\"col\":12}},{\"id\":\"4EDwzcCy_n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Orphan\",\"col\":3}},{\"id\":\"9xvvHeKbqj\",\"type\":\"card\",\"data\":{\"card_name\":\"Family\",\"col\":4}}]",
+ "content": "[{\"id\":\"ixfcfG9uaz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa</span>\",\"col\":12}},{\"id\":\"4EDwzcCy_n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Orphans\",\"col\":3}},{\"id\":\"i9pqZm4Uer\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"List Financial Study\",\"col\":4}},{\"id\":\"VgM3xSmWHO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Orphan\",\"col\":3}},{\"id\":\"9xvvHeKbqj\",\"type\":\"card\",\"data\":{\"card_name\":\"Family\",\"col\":4}}]",
  "creation": "2023-06-11 22:10:38.867310",
  "custom_blocks": [],
  "docstatus": 0,
@@ -41,7 +41,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-06-16 19:44:10.034172",
+ "modified": "2023-06-16 23:03:53.767340",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Namaa",
@@ -49,14 +49,26 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Financial Study",
+   "label": "List Financial Study"
+  }
+ ],
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
   {
    "color": "Grey",
-   "doc_view": "List",
+   "doc_view": "New",
    "label": "New Orphan",
+   "link_to": "Orphan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "List Orphans",
    "link_to": "Orphan",
    "type": "DocType"
   }

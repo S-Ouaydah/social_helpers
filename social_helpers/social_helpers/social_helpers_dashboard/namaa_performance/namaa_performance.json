@@ -2,15 +2,24 @@
  "cards": [
   {
    "card": "Female Orphans count"
+  },
+  {
+   "card": "Male Orphans count"
+  },
+  {
+   "card": "Family count"
+  },
+  {
+   "card": "Sponsors count"
   }
  ],
  "charts": [
   {
-   "chart": "Orphans count",
+   "chart": "Visits count",
    "width": "Half"
   },
   {
-   "chart": "Visits count",
+   "chart": "Visits by employee",
    "width": "Half"
   }
  ],
@@ -21,7 +30,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2023-06-15 20:12:33.995711",
+ "modified": "2023-06-18 00:47:39.009021",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Namaa Performance",

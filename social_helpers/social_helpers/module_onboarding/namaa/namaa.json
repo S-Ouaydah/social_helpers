@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "creation": "2023-06-16 23:19:37.085611",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "www.wow.com",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2023-06-16 23:19:37.085611",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Namaa",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "step 1"
+  }
+ ],
+ "subtitle": "is the best",
+ "success_message": "Bravo ya kbir",
+ "title": "My man"
+}
