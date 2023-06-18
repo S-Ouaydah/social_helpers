@@ -10,6 +10,8 @@
  "field_order": [
   "section_for_adminstration_section",
   "administration_decision",
+  "filler_name",
+  "filling_date",
   "administration_comments",
   "orphan_tab",
   "orphan_info_section",
@@ -477,6 +479,16 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "ID photo"
+  },
+  {
+   "fieldname": "filler_name",
+   "fieldtype": "Data",
+   "label": "Filler name"
+  },
+  {
+   "fieldname": "filling_date",
+   "fieldtype": "Date",
+   "label": "Filling date"
   }
  ],
  "image_field": "id_photo",
@@ -498,7 +510,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-18 02:44:33.638384",
+ "modified": "2023-06-19 00:26:21.818422",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",

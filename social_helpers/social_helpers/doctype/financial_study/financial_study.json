@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{orphan}-{date}",
+ "autoname": "format:F {date} - {orphan}",
  "creation": "2023-05-12 12:12:22.626799",
  "default_view": "List",
  "doctype": "DocType",
@@ -26,8 +26,8 @@
   "monthly_expenses_sum",
   "medications_section",
   "medications_table",
-  "icome_section",
-  "sources_with_in_the_family",
+  "income_section",
+  "sources_within_the_family",
   "other_sources"
  ],
  "fields": [
@@ -111,21 +111,10 @@
    "options": "Orphans Family"
   },
   {
-   "fieldname": "icome_section",
-   "fieldtype": "Section Break",
-   "label": "Icome"
-  },
-  {
    "fieldname": "other_sources",
    "fieldtype": "Table",
    "label": "Other sources",
    "options": "External Income source"
-  },
-  {
-   "fieldname": "sources_with_in_the_family",
-   "fieldtype": "Table",
-   "label": "Sources with in the family",
-   "options": "Income with in the family"
   },
   {
    "fieldname": "medications_section",
@@ -141,11 +130,22 @@
   {
    "fieldname": "column_break_ibml",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_section",
+   "fieldtype": "Section Break",
+   "label": "Income"
+  },
+  {
+   "fieldname": "sources_within_the_family",
+   "fieldtype": "Table",
+   "label": "Sources within the family",
+   "options": "Income within the family"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-18 02:42:10.075532",
+ "modified": "2023-06-18 21:38:55.168472",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Financial Study",
