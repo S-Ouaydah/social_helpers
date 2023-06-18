@@ -26,10 +26,12 @@
   "monthly_expenses_sum",
   "medications_section",
   "medications_table",
+  "medication_price_sum",
   "icome_section",
   "sources_with_in_the_family",
   "other_sources",
-  "income_sum"
+  "income_sum",
+  "amended_from"
  ],
  "fields": [
   {
@@ -101,9 +103,7 @@
   {
    "fieldname": "monthly_expenses_sum",
    "fieldtype": "Currency",
-   "is_virtual": 1,
-   "label": "Monthly Expenses Sum",
-   "options": "doc.food + doc.cloth + doc.transport + doc.gas + doc.electricity_bill + doc.house_expenses"
+   "label": "Monthly Expenses Sum"
   },
   {
    "fieldname": "family",
@@ -147,11 +147,26 @@
    "fieldname": "income_sum",
    "fieldtype": "Currency",
    "label": "Income sum"
+  },
+  {
+   "fieldname": "medication_price_sum",
+   "fieldtype": "Currency",
+   "label": "Medication Price Sum"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Financial Study",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-06-18 10:46:33.376478",
+ "modified": "2023-06-18 21:46:36.778832",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Financial Study",
