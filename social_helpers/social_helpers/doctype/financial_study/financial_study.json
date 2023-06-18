@@ -28,7 +28,8 @@
   "medications_table",
   "icome_section",
   "sources_with_in_the_family",
-  "other_sources"
+  "other_sources",
+  "income_sum"
  ],
  "fields": [
   {
@@ -141,11 +142,16 @@
   {
    "fieldname": "column_break_ibml",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_sum",
+   "fieldtype": "Currency",
+   "label": "Income sum"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-18 02:42:10.075532",
+ "modified": "2023-06-18 10:46:33.376478",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Financial Study",
