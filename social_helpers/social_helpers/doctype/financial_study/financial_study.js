@@ -16,7 +16,7 @@ frappe.ui.form.on("Financial Study", {
   },
 });
 
-frappe.ui.form.on("Income with in the family", {
+frappe.ui.form.on("Income within the family", {
   amount_given_to_family: function (frm) {
     calculate_total_income(frm);
   },
