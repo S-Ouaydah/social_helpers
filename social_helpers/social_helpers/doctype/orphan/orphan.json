@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{first_name} {middle_name} {last_name}",
+ "autoname": "format:{full_name}",
  "creation": "2023-05-07 10:40:34.228115",
  "default_view": "List",
  "doctype": "DocType",
@@ -11,19 +11,19 @@
   "orphan_tab",
   "orphan_info_section",
   "id_photo",
-  "first_name",
-  "middle_name",
-  "last_name",
+  "full_name",
   "nationality_orphan",
   "date_of_birth_orphan",
   "place_of_birth_orphan",
+  "character",
+  "hobbies",
   "column_break_scvd",
   "social_number_orphan",
   "gender",
   "orphan_type",
   "health_condition",
   "chronic_diseases",
-  "type_of_disease",
+  "disease_description",
   "column_break_rhz3",
   "education",
   "school_name",
@@ -31,7 +31,6 @@
   "cycle",
   "grade",
   "school_tuition",
-  "hobbies",
   "address_section",
   "city",
   "region",
@@ -94,14 +93,6 @@
    "options": "Father"
   },
   {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First name",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
    "fieldname": "father_info_section",
    "fieldtype": "Section Break",
    "label": "Father info"
@@ -110,26 +101,12 @@
    "fieldname": "nationality_orphan",
    "fieldtype": "Select",
    "label": "Nationality",
-   "options": "Lebanese\nSyrian\nPalestinian"
+   "options": "Lebanese\nSyrian\nPalestinian\nOther"
   },
   {
    "fieldname": "orphan_info_section",
    "fieldtype": "Section Break",
    "label": "Orphan info"
-  },
-  {
-   "fieldname": "middle_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Middle name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Last name",
-   "reqd": 1
   },
   {
    "fieldname": "date_of_birth_orphan",
@@ -159,22 +136,11 @@
    "options": "Orphan\nParental orphan"
   },
   {
-   "fieldname": "health_condition",
-   "fieldtype": "Select",
-   "label": "Health condition",
-   "options": "Good\nBad"
-  },
-  {
    "default": "0",
+   "depends_on": "health_condition",
    "fieldname": "chronic_diseases",
    "fieldtype": "Check",
    "label": "Chronic diseases"
-  },
-  {
-   "depends_on": "chronic_diseases",
-   "fieldname": "type_of_disease",
-   "fieldtype": "Small Text",
-   "label": "Type of disease"
   },
   {
    "depends_on": "eval:doc.education == 'Study'",
@@ -510,6 +476,31 @@
    "fieldtype": "Select",
    "label": "Center",
    "options": "Tripoli\nAkkar\nBeirut\nBikaa"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "health_condition",
+   "fieldtype": "Check",
+   "label": "Health Condition"
+  },
+  {
+   "depends_on": "health_condition",
+   "fieldname": "disease_description",
+   "fieldtype": "Small Text",
+   "label": "Disease Description"
+  },
+  {
+   "fieldname": "character",
+   "fieldtype": "Small Text",
+   "label": "Character"
   }
  ],
  "image_field": "id_photo",
@@ -531,7 +522,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-20 00:54:26.270383",
+ "modified": "2023-06-20 00:09:45.258313",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
