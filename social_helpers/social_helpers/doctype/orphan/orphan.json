@@ -328,7 +328,7 @@
    "default": "0",
    "fieldname": "do_they_go_to_sharia",
    "fieldtype": "Check",
-   "label": "Do they go to sharia studies  "
+   "label": "Do they go to sharia studies"
   },
   {
    "depends_on": "do_they_go_to_sharia",
@@ -516,7 +516,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-19 15:56:52.798380",
+ "modified": "2023-06-19 16:37:34.547443",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
