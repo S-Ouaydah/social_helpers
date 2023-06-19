@@ -58,7 +58,7 @@
   {
    "fieldname": "building_s",
    "fieldtype": "Data",
-   "label": "Building"
+   "label": "Building name"
   },
   {
    "fieldname": "floor_s",
@@ -106,7 +106,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-18 00:00:57.576187",
+ "modified": "2023-06-19 16:31:39.494706",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsor",

@@ -93,7 +93,7 @@
    "default": "0",
    "fieldname": "work",
    "fieldtype": "Check",
-   "label": "Work"
+   "label": "She works"
   },
   {
    "fieldname": "date_of_birth_mother",
@@ -108,7 +108,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-16 00:34:58.464286",
+ "modified": "2023-06-19 16:20:41.076231",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Mother",

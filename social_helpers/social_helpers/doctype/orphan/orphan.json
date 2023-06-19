@@ -8,11 +8,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "section_for_adminstration_section",
-  "administration_decision",
-  "filler_name",
-  "filling_date",
-  "administration_comments",
   "orphan_tab",
   "orphan_info_section",
   "id_photo",
@@ -59,8 +54,8 @@
   "filler_comment_on_house_status",
   "column_break_kpbb",
   "ownership",
-  "precise_situation",
   "monthly_rent_price",
+  "precise_situation",
   "general_info_about_the_family_section",
   "debt",
   "debt_ammount",
@@ -80,7 +75,13 @@
   "who_is_the_provider",
   "how_are_expenses_secured_please_specify",
   "provider",
-  "filler_comment_tab",
+  "details_tab",
+  "section_for_adminstration_section",
+  "administration_decision",
+  "administration_comments",
+  "column_break_liuo",
+  "filler_name",
+  "filling_date",
   "filler_comments"
  ],
  "fields": [
@@ -303,7 +304,7 @@
    "depends_on": "debt",
    "fieldname": "debt_ammount",
    "fieldtype": "Currency",
-   "label": "Debt ammount"
+   "label": "Debt amount"
   },
   {
    "depends_on": "debt",
@@ -315,7 +316,7 @@
    "depends_on": "debt",
    "fieldname": "monthly_payment_ammount",
    "fieldtype": "Currency",
-   "label": "Monthly payment ammount"
+   "label": "Monthly payment amount"
   },
   {
    "depends_on": "debt",
@@ -327,7 +328,7 @@
    "default": "0",
    "fieldname": "do_they_go_to_sharia",
    "fieldtype": "Check",
-   "label": "Do they go to sharia  "
+   "label": "Do they go to sharia studies  "
   },
   {
    "depends_on": "do_they_go_to_sharia",
@@ -339,7 +340,7 @@
    "default": "0",
    "fieldname": "is_there_clear_mouharamet",
    "fieldtype": "Check",
-   "label": "Is there clear mouharamet"
+   "label": "Is there clear prohibitions"
   },
   {
    "depends_on": "is_there_clear_mouharamet",
@@ -367,7 +368,8 @@
   },
   {
    "fieldname": "filler_comments",
-   "fieldtype": "Long Text"
+   "fieldtype": "Small Text",
+   "label": "Filler comments"
   },
   {
    "default": "0",
@@ -419,11 +421,6 @@
    "fieldname": "provider_tab",
    "fieldtype": "Tab Break",
    "label": "Provider"
-  },
-  {
-   "fieldname": "filler_comment_tab",
-   "fieldtype": "Tab Break",
-   "label": "Filler comments"
   },
   {
    "fieldname": "mother_info_section",
@@ -489,6 +486,15 @@
    "fieldname": "filling_date",
    "fieldtype": "Date",
    "label": "Filling date"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_liuo",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "id_photo",
@@ -510,7 +516,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-19 00:26:21.818422",
+ "modified": "2023-06-19 15:56:52.798380",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
