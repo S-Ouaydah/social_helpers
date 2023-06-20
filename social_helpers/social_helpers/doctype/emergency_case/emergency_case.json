@@ -1,0 +1,257 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-20 16:02:15.502491",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "form_filling_date",
+  "review_date",
+  "urgent_request",
+  "column_break_nwom",
+  "applicant",
+  "relation_to_case_owner",
+  "case_owner_info_section",
+  "full_name",
+  "date_of_birth",
+  "place_of_birth",
+  "nationality",
+  "column_break_oe3b",
+  "social_number",
+  "number_of_individuals_in_the_house",
+  "mobile_number",
+  "social_status",
+  "address_section",
+  "city",
+  "region",
+  "street",
+  "column_break_o0ci",
+  "building_name",
+  "near_to",
+  "phone_number",
+  "section_break_jzo9",
+  "reason_for_seeking_help",
+  "disease_description",
+  "surgery_date",
+  "surgery_cost_will_be_on",
+  "determine",
+  "total_amount",
+  "amount_collected",
+  "remaining_amount",
+  "column_break_s3kh",
+  "details",
+  "filler_comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review date"
+  },
+  {
+   "fieldname": "urgent_request",
+   "fieldtype": "Select",
+   "label": "Urgent request",
+   "options": "yes\nno\nkind of"
+  },
+  {
+   "fieldname": "applicant",
+   "fieldtype": "Data",
+   "label": "Applicant "
+  },
+  {
+   "fieldname": "relation_to_case_owner",
+   "fieldtype": "Data",
+   "label": "Relation to case owner"
+  },
+  {
+   "fieldname": "case_owner_info_section",
+   "fieldtype": "Section Break",
+   "label": "Case owner info"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place of birth"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalestinian"
+  },
+  {
+   "fieldname": "social_number",
+   "fieldtype": "Data",
+   "label": "Social number"
+  },
+  {
+   "fieldname": "number_of_individuals_in_the_house",
+   "fieldtype": "Int",
+   "label": "Number of individuals in the house"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile number"
+  },
+  {
+   "fieldname": "social_status",
+   "fieldtype": "Select",
+   "label": "Social Status",
+   "options": "Single\nMarried\nDivorced\nWidower"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building name"
+  },
+  {
+   "fieldname": "near_to",
+   "fieldtype": "Data",
+   "label": "Near to"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "column_break_nwom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oe3b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_o0ci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jzo9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_for_seeking_help",
+   "fieldtype": "Select",
+   "label": "Reason for seeking help",
+   "options": "debt\nillness\nfinancial issues\nother"
+  },
+  {
+   "depends_on": "eval:doc.reason_for_seeking_help == 'illness';",
+   "fieldname": "disease_description",
+   "fieldtype": "Data",
+   "label": "Disease Description"
+  },
+  {
+   "depends_on": "eval:doc.reason_for_seeking_help == 'illness';",
+   "fieldname": "surgery_date",
+   "fieldtype": "Date",
+   "label": "Surgery date"
+  },
+  {
+   "depends_on": "eval:doc.reason_for_seeking_help == 'illness';",
+   "fieldname": "surgery_cost_will_be_on",
+   "fieldtype": "Select",
+   "label": "Surgery cost will be on",
+   "options": "insurance\nministry of health\nNRWA\nsick individual\nother"
+  },
+  {
+   "depends_on": "eval:doc.surgery_cost_will_be_on == 'other';",
+   "fieldname": "determine",
+   "fieldtype": "Data",
+   "label": "Determine"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total amount"
+  },
+  {
+   "fieldname": "amount_collected",
+   "fieldtype": "Currency",
+   "label": "Amount collected"
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining amount"
+  },
+  {
+   "fieldname": "column_break_s3kh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Text",
+   "label": "Details"
+  },
+  {
+   "fieldname": "filler_comments",
+   "fieldtype": "Small Text",
+   "label": "Filler comments"
+  },
+  {
+   "fieldname": "form_filling_date",
+   "fieldtype": "Date",
+   "label": "Form Filling Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-20 16:26:39.996602",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Emergency case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
