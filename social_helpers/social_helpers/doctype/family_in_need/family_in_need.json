@@ -107,22 +107,24 @@
   },
   {
    "fieldname": "section_break_adbk",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Family members"
   },
   {
    "fieldname": "family_members",
    "fieldtype": "Table",
-   "label": "Family members",
+   "label": "Make sure to fill remaining fields with edit",
    "options": "Family members"
   },
   {
    "fieldname": "section_break_eupj",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Health condition"
   },
   {
    "fieldname": "health_condition",
    "fieldtype": "Table",
-   "label": "Health condition",
+   "label": "Make sure to fill remaining fields with edit",
    "options": "Health condition"
   },
   {
@@ -133,7 +135,7 @@
    "fieldname": "house_status",
    "fieldtype": "Select",
    "label": "House status",
-   "options": "owned\nrented"
+   "options": "owned\nrented\nguests\ndisplaced"
   },
   {
    "depends_on": "eval:doc.house_status == 'rented'",
@@ -225,7 +227,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 13:40:12.570555",
+ "modified": "2023-06-20 14:03:43.375773",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family in need",
