@@ -16,7 +16,6 @@
   "date_of_birth_orphan",
   "place_of_birth_orphan",
   "character",
-  "hobbies",
   "column_break_scvd",
   "social_number_orphan",
   "gender",
@@ -24,6 +23,7 @@
   "health_condition",
   "chronic_diseases",
   "disease_description",
+  "hobbies",
   "column_break_rhz3",
   "education",
   "school_name",
@@ -522,7 +522,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-20 00:09:45.258313",
+ "modified": "2023-06-20 11:55:52.823534",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",

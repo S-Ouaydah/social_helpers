@@ -1,18 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{first_name_s} {middle_name_s} {last_name_s}",
+ "autoname": "format:{full_name_s}",
  "creation": "2023-06-15 20:28:21.511935",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "first_name_s",
-  "middle_name_s",
-  "last_name_s",
-  "column_break_ha1m",
+  "full_name_s",
   "email",
+  "column_break_ha1m",
   "mobile_number_s",
   "phone_number_s",
   "address_s",
@@ -26,21 +24,6 @@
   "sponsor_conditions"
  ],
  "fields": [
-  {
-   "fieldname": "first_name_s",
-   "fieldtype": "Data",
-   "label": "First name"
-  },
-  {
-   "fieldname": "middle_name_s",
-   "fieldtype": "Data",
-   "label": "Middle name"
-  },
-  {
-   "fieldname": "last_name_s",
-   "fieldtype": "Data",
-   "label": "Last name"
-  },
   {
    "fieldname": "address_s",
    "fieldtype": "Section Break",
@@ -102,11 +85,16 @@
   {
    "fieldname": "column_break_zavf",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name_s",
+   "fieldtype": "Data",
+   "label": "Full name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 16:31:39.494706",
+ "modified": "2023-06-20 11:53:51.470572",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsor",

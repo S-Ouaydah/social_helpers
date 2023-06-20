@@ -1,21 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{first_name_provider} {middle_name_provider} {last_name_provider}",
+ "autoname": "format:{full_name_provider}",
  "creation": "2023-06-15 13:32:05.050328",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "first_name_provider",
-  "middle_name_provider",
-  "last_name_provider",
+  "full_name_provider",
   "date_of_birth_provider",
   "place_of_birth_provider",
   "mothers_name_provider",
-  "column_break_7zby",
   "nationality_provider",
+  "column_break_7zby",
   "relation_to_orphan",
   "social_status_provider",
   "number_of_children",
@@ -29,21 +27,6 @@
   "religion_status"
  ],
  "fields": [
-  {
-   "fieldname": "first_name_provider",
-   "fieldtype": "Data",
-   "label": "First name"
-  },
-  {
-   "fieldname": "middle_name_provider",
-   "fieldtype": "Data",
-   "label": "Middle name"
-  },
-  {
-   "fieldname": "last_name_provider",
-   "fieldtype": "Data",
-   "label": "Last name"
-  },
   {
    "fieldname": "date_of_birth_provider",
    "fieldtype": "Date",
@@ -124,11 +107,16 @@
    "fieldname": "care_level_provid",
    "fieldtype": "Rating",
    "label": "Care level"
+  },
+  {
+   "fieldname": "full_name_provider",
+   "fieldtype": "Data",
+   "label": "Full name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-16 15:05:54.445158",
+ "modified": "2023-06-20 11:54:54.811816",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Provider",
