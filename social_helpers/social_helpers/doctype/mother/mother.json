@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{fulll_name}",
+ "autoname": "format:{full_name}",
  "creation": "2023-05-12 11:02:46.259751",
  "default_view": "List",
  "doctype": "DocType",
@@ -90,7 +90,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 11:51:42.345799",
+ "modified": "2023-06-24 17:47:22.349936",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Mother",

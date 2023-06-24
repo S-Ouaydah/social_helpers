@@ -1,562 +1,566 @@
 {
-  "actions": [],
-  "allow_rename": 1,
-  "autoname": "format:{full_name}",
-  "creation": "2023-05-07 10:40:34.228115",
-  "default_view": "List",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "orphan_tab",
-    "orphan_info_section",
-    "id_photo",
-    "full_name",
-    "nationality_orphan",
-    "date_of_birth_orphan",
-    "place_of_birth_orphan",
-    "character",
-    "column_break_scvd",
-    "social_number_orphan",
-    "gender",
-    "adult",
-    "both_parent_dead",
-    "health_condition",
-    "chronic_diseases",
-    "disease_description",
-    "hobbies",
-    "column_break_rhz3",
-    "education",
-    "school_name",
-    "school_type",
-    "cycle",
-    "grade",
-    "school_tuition",
-    "school_transportation_cost",
-    "address_section",
-    "city",
-    "region",
-    "street",
-    "near_to",
-    "column_break_ddtb",
-    "building_name",
-    "floor",
-    "phone_number",
-    "mobile_number",
-    "father_tab",
-    "father_info_section",
-    "father",
-    "mother_tab",
-    "mother_info_section",
-    "mother",
-    "family_tab",
-    "family_details",
-    "house_status_section",
-    "house_status",
-    "filler_comment_on_house_status",
-    "column_break_kpbb",
-    "ownership",
-    "monthly_rent_price",
-    "precise_situation",
-    "general_info_about_the_family_section",
-    "debt",
-    "debt_ammount",
-    "to_whom",
-    "monthly_payment_ammount",
-    "cause",
-    "do_they_go_to_sharia",
-    "specify_please_1",
-    "is_there_clear_mouharamet",
-    "specify_please_2",
-    "do_the_children_go_to_religious_summer_camp",
-    "specify_please_3",
-    "does_the_orphan_go_to_other_organization",
-    "specify_please_4",
-    "provider_tab",
-    "provider_info_section",
-    "who_is_the_provider",
-    "how_are_expenses_secured_please_specify",
-    "provider",
-    "details_tab",
-    "section_for_adminstration_section",
-    "administration_decision",
-    "administration_comments",
-    "column_break_liuo",
-    "filler_name",
-    "filling_date",
-    "filler_comments",
-    "center"
-  ],
-  "fields": [
-    {
-      "fieldname": "father",
-      "fieldtype": "Link",
-      "label": "Father",
-      "options": "Father"
-    },
-    {
-      "fieldname": "father_info_section",
-      "fieldtype": "Section Break",
-      "label": "Father info"
-    },
-    {
-      "fieldname": "nationality_orphan",
-      "fieldtype": "Select",
-      "label": "Nationality",
-      "options": "Lebanese\nSyrian\nPalestinian\nOther"
-    },
-    {
-      "fieldname": "orphan_info_section",
-      "fieldtype": "Section Break",
-      "label": "Orphan info"
-    },
-    {
-      "fieldname": "date_of_birth_orphan",
-      "fieldtype": "Date",
-      "label": "Date of birth"
-    },
-    {
-      "fieldname": "place_of_birth_orphan",
-      "fieldtype": "Data",
-      "label": "Place of birth"
-    },
-    {
-      "fieldname": "social_number_orphan",
-      "fieldtype": "Data",
-      "label": "Social number"
-    },
-    {
-      "fieldname": "gender",
-      "fieldtype": "Select",
-      "in_filter": 0,
-      "label": "Gender",
-      "options": "Male\nFemale"
-    },
-    {
-      "default": "0",
-      "depends_on": "health_condition",
-      "fieldname": "chronic_diseases",
-      "fieldtype": "Check",
-      "label": "Chronic diseases"
-    },
-    {
-      "depends_on": "eval:doc.education == 'Study'",
-      "fieldname": "school_name",
-      "fieldtype": "Data",
-      "label": "School name"
-    },
-    {
-      "depends_on": "eval:doc.education == 'Study'",
-      "fieldname": "cycle",
-      "fieldtype": "Data",
-      "label": "Cycle"
-    },
-    {
-      "depends_on": "eval:doc.education == 'Study'",
-      "fieldname": "grade",
-      "fieldtype": "Data",
-      "label": "Grade"
-    },
-    {
-      "depends_on": "eval:doc.education == 'Study'",
-      "fieldname": "school_tuition",
-      "fieldtype": "Currency",
-      "label": "School tuition"
-    },
-    {
-      "fieldname": "hobbies",
-      "fieldtype": "Data",
-      "label": "Hobbies"
-    },
-    {
-      "fieldname": "education",
-      "fieldtype": "Select",
-      "label": "Education",
-      "options": "Study\nDon't study\nUnder school age"
-    },
-    {
-      "fieldname": "section_for_adminstration_section",
-      "fieldtype": "Section Break",
-      "label": "Section for administration"
-    },
-    {
-      "fieldname": "address_section",
-      "fieldtype": "Section Break",
-      "label": "Address"
-    },
-    {
-      "fieldname": "city",
-      "fieldtype": "Data",
-      "label": "City"
-    },
-    {
-      "fieldname": "region",
-      "fieldtype": "Data",
-      "label": "Region"
-    },
-    {
-      "fieldname": "street",
-      "fieldtype": "Data",
-      "label": "Street"
-    },
-    {
-      "fieldname": "near_to",
-      "fieldtype": "Data",
-      "label": "Near to"
-    },
-    {
-      "fieldname": "column_break_ddtb",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "building_name",
-      "fieldtype": "Data",
-      "label": "Building name"
-    },
-    {
-      "fieldname": "floor",
-      "fieldtype": "Data",
-      "label": "Floor"
-    },
-    {
-      "fieldname": "phone_number",
-      "fieldtype": "Phone",
-      "label": "Phone Number"
-    },
-    {
-      "fieldname": "mobile_number",
-      "fieldtype": "Phone",
-      "label": "Mobile Number"
-    },
-    {
-      "fieldname": "house_status_section",
-      "fieldtype": "Section Break",
-      "label": "House Status"
-    },
-    {
-      "depends_on": "eval:doc.ownership == 'rented'",
-      "fieldname": "monthly_rent_price",
-      "fieldtype": "Currency",
-      "label": "Monthly rent price"
-    },
-    {
-      "fieldname": "filler_comment_on_house_status",
-      "fieldtype": "Small Text",
-      "label": "Filler comment on house status"
-    },
-    {
-      "fieldname": "administration_decision",
-      "fieldtype": "Data",
-      "label": "Administration decision"
-    },
-    {
-      "fieldname": "provider_info_section",
-      "fieldtype": "Section Break",
-      "label": "Provider Info"
-    },
-    {
-      "fieldname": "general_info_about_the_family_section",
-      "fieldtype": "Section Break",
-      "label": "General info about the family"
-    },
-    {
-      "default": "0",
-      "fieldname": "debt",
-      "fieldtype": "Check",
-      "label": "Debt"
-    },
-    {
-      "depends_on": "debt",
-      "fieldname": "debt_ammount",
-      "fieldtype": "Currency",
-      "label": "Debt amount"
-    },
-    {
-      "depends_on": "debt",
-      "fieldname": "to_whom",
-      "fieldtype": "Data",
-      "label": "To whom"
-    },
-    {
-      "depends_on": "debt",
-      "fieldname": "monthly_payment_ammount",
-      "fieldtype": "Currency",
-      "label": "Monthly payment amount"
-    },
-    {
-      "depends_on": "debt",
-      "fieldname": "cause",
-      "fieldtype": "Small Text",
-      "label": "Cause"
-    },
-    {
-      "default": "0",
-      "fieldname": "do_they_go_to_sharia",
-      "fieldtype": "Check",
-      "label": "Do they go to sharia studies"
-    },
-    {
-      "depends_on": "do_they_go_to_sharia",
-      "fieldname": "specify_please_1",
-      "fieldtype": "Small Text",
-      "label": "Specify please"
-    },
-    {
-      "default": "0",
-      "fieldname": "is_there_clear_mouharamet",
-      "fieldtype": "Check",
-      "label": "Is there clear prohibitions"
-    },
-    {
-      "depends_on": "is_there_clear_mouharamet",
-      "fieldname": "specify_please_2",
-      "fieldtype": "Small Text",
-      "label": "Specify please"
-    },
-    {
-      "default": "0",
-      "fieldname": "do_the_children_go_to_religious_summer_camp",
-      "fieldtype": "Check",
-      "label": "Do the children go to religious summer camp"
-    },
-    {
-      "depends_on": "do_the_children_go_to_religious_summer_camp",
-      "fieldname": "specify_please_3",
-      "fieldtype": "Small Text",
-      "label": "Specify please"
-    },
-    {
-      "depends_on": "does_the_orphan_go_to_other_organization",
-      "fieldname": "specify_please_4",
-      "fieldtype": "Small Text",
-      "label": "Specify please"
-    },
-    {
-      "fieldname": "filler_comments",
-      "fieldtype": "Small Text",
-      "label": "Filler comments"
-    },
-    {
-      "default": "0",
-      "fieldname": "does_the_orphan_go_to_other_organization",
-      "fieldtype": "Check",
-      "label": "Does the orphan go to other organization"
-    },
-    {
-      "fieldname": "column_break_rhz3",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "column_break_scvd",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "who_is_the_provider",
-      "fieldtype": "Select",
-      "label": "Who is the provider",
-      "options": "the mother\nother\nnone"
-    },
-    {
-      "depends_on": "eval:doc.who_is_the_provider == 'none'",
-      "fieldname": "how_are_expenses_secured_please_specify",
-      "fieldtype": "Text",
-      "label": "How are expenses secured please specify"
-    },
-    {
-      "fieldname": "orphan_tab",
-      "fieldtype": "Tab Break",
-      "label": "Orphan"
-    },
-    {
-      "fieldname": "father_tab",
-      "fieldtype": "Tab Break",
-      "label": "Father"
-    },
-    {
-      "fieldname": "mother_tab",
-      "fieldtype": "Tab Break",
-      "label": "Mother"
-    },
-    {
-      "fieldname": "family_tab",
-      "fieldtype": "Tab Break",
-      "label": "Family"
-    },
-    {
-      "fieldname": "provider_tab",
-      "fieldtype": "Tab Break",
-      "label": "Provider"
-    },
-    {
-      "fieldname": "mother_info_section",
-      "fieldtype": "Section Break",
-      "label": "Mother info"
-    },
-    {
-      "fieldname": "mother",
-      "fieldtype": "Link",
-      "label": "Mother",
-      "options": "Mother"
-    },
-    {
-      "depends_on": "eval:doc.who_is_the_provider == 'other'",
-      "fieldname": "provider",
-      "fieldtype": "Link",
-      "label": "Provider",
-      "options": "Provider"
-    },
-    {
-      "depends_on": "eval:doc.ownership == 'other'",
-      "fieldname": "precise_situation",
-      "fieldtype": "Small Text",
-      "label": "Precise Situation"
-    },
-    {
-      "fieldname": "column_break_kpbb",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "ownership",
-      "fieldtype": "Select",
-      "label": "Ownership",
-      "options": "owned\nrented\nother"
-    },
-    {
-      "fieldname": "house_status",
-      "fieldtype": "Rating"
-    },
-    {
-      "fieldname": "family_details",
-      "fieldtype": "Link",
-      "label": "Family details",
-      "options": "Orphans Family"
-    },
-    {
-      "fieldname": "administration_comments",
-      "fieldtype": "Text",
-      "label": "Administration comments"
-    },
-    {
-      "fieldname": "id_photo",
-      "fieldtype": "Attach Image",
-      "hidden": 1,
-      "label": "ID photo"
-    },
-    {
-      "fieldname": "filler_name",
-      "fieldtype": "Data",
-      "label": "Filler name"
-    },
-    {
-      "fieldname": "filling_date",
-      "fieldtype": "Date",
-      "label": "Filling date"
-    },
-    {
-      "fieldname": "details_tab",
-      "fieldtype": "Tab Break",
-      "label": "Details"
-    },
-    {
-      "fieldname": "column_break_liuo",
-      "fieldtype": "Column Break"
-    },
-    {
-      "depends_on": "eval:doc.education == 'Study'",
-      "fieldname": "school_type",
-      "fieldtype": "Select",
-      "label": "School type",
-      "options": "Public\nPrivate\nSemi public"
-    },
-    {
-      "fieldname": "center",
-      "fieldtype": "Select",
-      "label": "Center",
-      "options": "Tripoli\nAkkar\nBeirut\nBikaa"
-    },
-    {
-      "fieldname": "full_name",
-      "fieldtype": "Data",
-      "in_list_view": 1,
-      "label": "Full name",
-      "reqd": 1,
-      "unique": 1
-    },
-    {
-      "default": "0",
-      "fieldname": "health_condition",
-      "fieldtype": "Check",
-      "label": "Health Condition"
-    },
-    {
-      "depends_on": "health_condition",
-      "fieldname": "disease_description",
-      "fieldtype": "Small Text",
-      "label": "Disease Description"
-    },
-    {
-      "fieldname": "character",
-      "fieldtype": "Small Text",
-      "label": "Character"
-    },
-    {
-      "default": "0",
-      "fieldname": "both_parent_dead",
-      "fieldtype": "Check",
-      "label": "Both parent dead"
-    },
-    {
-      "fieldname": "school_transportation_cost",
-      "fieldtype": "Currency",
-      "label": "School Transportation cost"
-    },
-    {
-      "default": "0",
-      "fieldname": "adult",
-      "fieldtype": "Check",
-      "label": "Adult"
-    }
-  ],
-  "image_field": "id_photo",
-  "index_web_pages_for_search": 1,
-  "links": [
-    {
-      "group": "Studies",
-      "link_doctype": "Financial Study",
-      "link_fieldname": "orphan"
-    },
-    {
-      "group": "Sponsorships",
-      "link_doctype": "Sponsorship",
-      "link_fieldname": "orphan"
-    },
-    {
-      "group": "Visits",
-      "link_doctype": "Visit",
-      "link_fieldname": "orphan"
-    }
-  ],
-  "modified": "2023-06-22 00:16:09.850722",
-  "modified_by": "Administrator",
-  "module": "Social Helpers",
-  "name": "Orphan",
-  "naming_rule": "Expression",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "create": 1,
-      "delete": 1,
-      "email": 1,
-      "export": 1,
-      "print": 1,
-      "read": 1,
-      "report": 1,
-      "role": "System Manager",
-      "share": 1,
-      "write": 1
-    }
-  ],
-  "sort_field": "modified",
-  "sort_order": "DESC",
-  "states": []
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name}",
+ "creation": "2023-05-07 10:40:34.228115",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "orphan_tab",
+  "orphan_info_section",
+  "id_photo",
+  "full_name",
+  "nationality_orphan",
+  "date_of_birth_orphan",
+  "place_of_birth_orphan",
+  "character",
+  "column_break_scvd",
+  "social_number_orphan",
+  "gender",
+  "adult",
+  "both_parent_dead",
+  "health_condition",
+  "chronic_diseases",
+  "disease_description",
+  "hobbies",
+  "column_break_rhz3",
+  "education",
+  "school_name",
+  "school_type",
+  "cycle",
+  "grade",
+  "school_tuition",
+  "school_transportation_cost",
+  "address_section",
+  "city",
+  "region",
+  "street",
+  "near_to",
+  "column_break_ddtb",
+  "building_name",
+  "floor",
+  "phone_number",
+  "mobile_number",
+  "father_tab",
+  "father_info_section",
+  "father",
+  "mother_tab",
+  "mother_info_section",
+  "mother",
+  "family_tab",
+  "family_details",
+  "house_status_section",
+  "house_status",
+  "filler_comment_on_house_status",
+  "column_break_kpbb",
+  "ownership",
+  "monthly_rent_price",
+  "precise_situation",
+  "general_info_about_the_family_section",
+  "debt",
+  "debt_ammount",
+  "to_whom",
+  "monthly_payment_ammount",
+  "cause",
+  "do_they_go_to_sharia",
+  "specify_please_1",
+  "is_there_clear_mouharamet",
+  "specify_please_2",
+  "do_the_children_go_to_religious_summer_camp",
+  "specify_please_3",
+  "does_the_orphan_go_to_other_organization",
+  "specify_please_4",
+  "provider_tab",
+  "provider_info_section",
+  "who_is_the_provider",
+  "how_are_expenses_secured_please_specify",
+  "provider",
+  "details_tab",
+  "section_for_adminstration_section",
+  "administration_decision",
+  "administration_comments",
+  "column_break_liuo",
+  "filler_name",
+  "filling_date",
+  "filler_comments",
+  "center"
+ ],
+ "fields": [
+  {
+   "fieldname": "father",
+   "fieldtype": "Link",
+   "label": "Father",
+   "options": "Father"
+  },
+  {
+   "fieldname": "father_info_section",
+   "fieldtype": "Section Break",
+   "label": "Father info"
+  },
+  {
+   "fieldname": "nationality_orphan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalestinian\nOther"
+  },
+  {
+   "fieldname": "orphan_info_section",
+   "fieldtype": "Section Break",
+   "label": "Orphan info"
+  },
+  {
+   "fieldname": "date_of_birth_orphan",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "place_of_birth_orphan",
+   "fieldtype": "Data",
+   "label": "Place of birth"
+  },
+  {
+   "fieldname": "social_number_orphan",
+   "fieldtype": "Data",
+   "label": "Social number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "default": "0",
+   "depends_on": "health_condition",
+   "fieldname": "chronic_diseases",
+   "fieldtype": "Check",
+   "label": "Chronic diseases"
+  },
+  {
+   "depends_on": "eval:doc.education == 'Study'",
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School name"
+  },
+  {
+   "depends_on": "eval:doc.education == 'Study'",
+   "fieldname": "cycle",
+   "fieldtype": "Data",
+   "label": "Cycle"
+  },
+  {
+   "depends_on": "eval:doc.education == 'Study'",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "depends_on": "eval:doc.education == 'Study'",
+   "fieldname": "school_tuition",
+   "fieldtype": "Currency",
+   "label": "School tuition"
+  },
+  {
+   "fieldname": "hobbies",
+   "fieldtype": "Data",
+   "label": "Hobbies"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Select",
+   "label": "Education",
+   "options": "Study\nDon't study\nUnder school age"
+  },
+  {
+   "fieldname": "section_for_adminstration_section",
+   "fieldtype": "Section Break",
+   "label": "Section for administration"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "near_to",
+   "fieldtype": "Data",
+   "label": "Near to"
+  },
+  {
+   "fieldname": "column_break_ddtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building name"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "house_status_section",
+   "fieldtype": "Section Break",
+   "label": "House Status"
+  },
+  {
+   "depends_on": "eval:doc.ownership == 'rented'",
+   "fieldname": "monthly_rent_price",
+   "fieldtype": "Currency",
+   "label": "Monthly rent price"
+  },
+  {
+   "fieldname": "filler_comment_on_house_status",
+   "fieldtype": "Small Text",
+   "label": "Filler comment on house status"
+  },
+  {
+   "fieldname": "administration_decision",
+   "fieldtype": "Data",
+   "label": "Administration decision"
+  },
+  {
+   "fieldname": "provider_info_section",
+   "fieldtype": "Section Break",
+   "label": "Provider Info"
+  },
+  {
+   "fieldname": "general_info_about_the_family_section",
+   "fieldtype": "Section Break",
+   "label": "General info about the family"
+  },
+  {
+   "default": "0",
+   "fieldname": "debt",
+   "fieldtype": "Check",
+   "label": "Debt"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "debt_ammount",
+   "fieldtype": "Currency",
+   "label": "Debt amount"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "to_whom",
+   "fieldtype": "Data",
+   "label": "To whom"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "monthly_payment_ammount",
+   "fieldtype": "Currency",
+   "label": "Monthly payment amount"
+  },
+  {
+   "depends_on": "debt",
+   "fieldname": "cause",
+   "fieldtype": "Small Text",
+   "label": "Cause"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_they_go_to_sharia",
+   "fieldtype": "Check",
+   "label": "Do they go to sharia studies"
+  },
+  {
+   "depends_on": "do_they_go_to_sharia",
+   "fieldname": "specify_please_1",
+   "fieldtype": "Small Text",
+   "label": "Specify please"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_there_clear_mouharamet",
+   "fieldtype": "Check",
+   "label": "Is there clear prohibitions"
+  },
+  {
+   "depends_on": "is_there_clear_mouharamet",
+   "fieldname": "specify_please_2",
+   "fieldtype": "Small Text",
+   "label": "Specify please"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_the_children_go_to_religious_summer_camp",
+   "fieldtype": "Check",
+   "label": "Do the children go to religious summer camp"
+  },
+  {
+   "depends_on": "do_the_children_go_to_religious_summer_camp",
+   "fieldname": "specify_please_3",
+   "fieldtype": "Small Text",
+   "label": "Specify please"
+  },
+  {
+   "depends_on": "does_the_orphan_go_to_other_organization",
+   "fieldname": "specify_please_4",
+   "fieldtype": "Small Text",
+   "label": "Specify please"
+  },
+  {
+   "fieldname": "filler_comments",
+   "fieldtype": "Small Text",
+   "label": "Filler comments"
+  },
+  {
+   "default": "0",
+   "fieldname": "does_the_orphan_go_to_other_organization",
+   "fieldtype": "Check",
+   "label": "Does the orphan go to other organization"
+  },
+  {
+   "fieldname": "column_break_rhz3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_scvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "who_is_the_provider",
+   "fieldtype": "Select",
+   "label": "Who is the provider",
+   "options": "the mother\nother\nnone"
+  },
+  {
+   "depends_on": "eval:doc.who_is_the_provider == 'none'",
+   "fieldname": "how_are_expenses_secured_please_specify",
+   "fieldtype": "Text",
+   "label": "How are expenses secured please specify"
+  },
+  {
+   "fieldname": "orphan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Orphan"
+  },
+  {
+   "fieldname": "father_tab",
+   "fieldtype": "Tab Break",
+   "label": "Father"
+  },
+  {
+   "fieldname": "mother_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mother"
+  },
+  {
+   "fieldname": "family_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family"
+  },
+  {
+   "fieldname": "provider_tab",
+   "fieldtype": "Tab Break",
+   "label": "Provider"
+  },
+  {
+   "fieldname": "mother_info_section",
+   "fieldtype": "Section Break",
+   "label": "Mother info"
+  },
+  {
+   "fieldname": "mother",
+   "fieldtype": "Link",
+   "label": "Mother",
+   "options": "Mother"
+  },
+  {
+   "depends_on": "eval:doc.who_is_the_provider == 'other'",
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "Provider"
+  },
+  {
+   "depends_on": "eval:doc.ownership == 'other'",
+   "fieldname": "precise_situation",
+   "fieldtype": "Small Text",
+   "label": "Precise Situation"
+  },
+  {
+   "fieldname": "column_break_kpbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership",
+   "fieldtype": "Select",
+   "label": "Ownership",
+   "options": "owned\nrented\nother"
+  },
+  {
+   "fieldname": "house_status",
+   "fieldtype": "Rating"
+  },
+  {
+   "fieldname": "family_details",
+   "fieldtype": "Link",
+   "label": "Family details",
+   "options": "Orphans Family"
+  },
+  {
+   "fieldname": "administration_comments",
+   "fieldtype": "Text",
+   "label": "Administration comments"
+  },
+  {
+   "fieldname": "id_photo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "ID photo"
+  },
+  {
+   "fieldname": "filler_name",
+   "fieldtype": "Data",
+   "label": "Filler name"
+  },
+  {
+   "fieldname": "filling_date",
+   "fieldtype": "Date",
+   "label": "Filling date"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_liuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.education == 'Study'",
+   "fieldname": "school_type",
+   "fieldtype": "Select",
+   "label": "School type",
+   "options": "Public\nPrivate\nSemi public"
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Center",
+   "options": "Tripoli\nAkkar\nBeirut\nBikaa"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "health_condition",
+   "fieldtype": "Check",
+   "label": "Health Condition"
+  },
+  {
+   "depends_on": "health_condition",
+   "fieldname": "disease_description",
+   "fieldtype": "Small Text",
+   "label": "Disease Description"
+  },
+  {
+   "fieldname": "character",
+   "fieldtype": "Small Text",
+   "label": "Character"
+  },
+  {
+   "default": "0",
+   "fieldname": "both_parent_dead",
+   "fieldtype": "Check",
+   "label": "Both parent dead"
+  },
+  {
+   "fieldname": "school_transportation_cost",
+   "fieldtype": "Currency",
+   "label": "School Transportation cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "adult",
+   "fieldtype": "Check",
+   "label": "Adult"
+  }
+ ],
+ "image_field": "id_photo",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Studies",
+   "link_doctype": "Financial Study",
+   "link_fieldname": "orphan"
+  },
+  {
+   "group": "Sponsorships",
+   "link_doctype": "Sponsorship",
+   "link_fieldname": "orphan"
+  },
+  {
+   "group": "Visits",
+   "link_doctype": "Visit",
+   "link_fieldname": "orphan"
+  }
+ ],
+ "modified": "2023-06-24 16:35:37.182415",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Orphan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
 }
