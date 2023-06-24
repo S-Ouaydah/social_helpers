@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Sponsorship{#####}",
  "creation": "2023-06-14 20:25:44.958597",
  "default_view": "List",
  "doctype": "DocType",
@@ -36,22 +37,26 @@
   {
    "fieldname": "orphan",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Orphan",
    "options": "Orphan"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Start date"
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "End date"
   },
   {
    "fieldname": "sponsor",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Sponsor",
    "options": "Sponsor"
   },
@@ -67,10 +72,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-17 23:51:11.001939",
+ "modified": "2023-06-24 15:37:51.747624",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsorship",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
