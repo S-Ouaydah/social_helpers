@@ -1,4 +1,4 @@
-frappe.query_reports["Test 234"] = {
+frappe.query_reports["Non Sponsored Orphans"] = {
   filters: [
     {
       fieldname: "gender",
