@@ -15,6 +15,7 @@
   "social_number",
   "mothers_full_name",
   "column_break_m5h2t",
+  "is_dead",
   "date_of_death",
   "number_of_family_members",
   "work_before_death",
@@ -52,27 +53,32 @@
    "label": "Mother's full name"
   },
   {
+   "depends_on": "is_dead",
    "fieldname": "date_of_death",
    "fieldtype": "Date",
    "label": "Date of death"
   },
   {
+   "depends_on": "is_dead",
    "fieldname": "number_of_family_members",
    "fieldtype": "Int",
    "label": "Number of family members"
   },
   {
+   "depends_on": "is_dead",
    "fieldname": "work_before_death",
    "fieldtype": "Data",
    "label": "Work before death"
   },
   {
+   "depends_on": "is_dead",
    "fieldname": "inheritance",
    "fieldtype": "Data",
    "label": "Inheritance"
   },
   {
    "default": "0",
+   "depends_on": "is_dead",
    "fieldname": "insured",
    "fieldtype": "Check",
    "label": "Insured"
@@ -84,13 +90,14 @@
    "label": "Insurance value"
   },
   {
+   "depends_on": "is_dead",
    "fieldname": "death_cause",
    "fieldtype": "Select",
    "label": "Death cause",
    "options": "accident\nillness\nnatural death\nother"
   },
   {
-   "depends_on": "death_cause",
+   "depends_on": "is_dead",
    "fieldname": "death_description",
    "fieldtype": "Small Text",
    "label": "Death description"
@@ -103,11 +110,17 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full name"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_dead",
+   "fieldtype": "Check",
+   "label": "Is Dead"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 11:52:22.205659",
+ "modified": "2023-07-07 01:50:46.967017",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Father",

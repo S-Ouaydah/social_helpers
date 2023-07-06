@@ -1,61 +1,180 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-06-11 12:14:29.094379",
+ "creation": "2023-07-07 01:23:49.945509",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "members",
-  "debt",
-  "debt_section",
-  "total_ammount",
-  "monthly_ammount",
-  "reason",
-  "lender",
+  "filler_name",
+  "filling_date",
+  "column_break_vewu",
+  "receiver",
+  "nationality",
+  "social_number",
+  "section_break_adbk",
+  "father",
+  "father_is_dead",
+  "mother",
+  "column_break_wpuz",
+  "children",
+  "provider",
+  "section_break_dptu",
+  "relatives",
+  "family_members",
   "address_section",
-  "city",
-  "zone",
+  "address",
+  "region",
   "street",
-  "near",
-  "column_break_ix0vh",
-  "building",
+  "building_name",
+  "column_break_ndmn",
   "floor",
-  "mobile_num",
-  "phone_num",
-  "column_break_cas47",
-  "ownership_status",
-  "description",
-  "rent_price",
-  "room_num",
-  "status",
-  "section_break_dpfaw",
-  "comment_explanation",
+  "near_to",
+  "phone_number",
+  "section_break_eupj",
+  "health_condition",
+  "section_break_jsgr",
+  "house_status",
+  "monthly_rent_price",
+  "room_number",
+  "section_break_umom",
+  "economic_situation",
+  "debt",
+  "debt_amount",
+  "cause",
+  "payment",
+  "section_break_psxa",
+  "hlep",
+  "section_break_eag6",
   "comments",
-  "mou3il_section",
-  "the_mou3il",
-  "moustawa_l_ri3aya",
-  "ri3aye_duration",
-  "religion_status_section",
-  "dourous_3lm_shar3i",
-  "details1",
-  "mou7aramet_zahira_2a8ani_tabaroj_soufour",
-  "details2",
-  "dawrat_diniye",
-  "details3",
-  "other_institution",
-  "details4",
-  "section_break_fsnyr",
-  "filler_comments",
-  "financial_study"
+  "column_break_euqw",
+  "administration_decision",
+  "date"
  ],
  "fields": [
   {
-   "fieldname": "members",
+   "fieldname": "filler_name",
+   "fieldtype": "Data",
+   "label": "Filler name"
+  },
+  {
+   "fieldname": "filling_date",
+   "fieldtype": "Data",
+   "label": "Filling date"
+  },
+  {
+   "fieldname": "column_break_vewu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Lebanese\nSyrian\nPalestinian"
+  },
+  {
+   "fieldname": "social_number",
+   "fieldtype": "Data",
+   "label": "Social number"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building name"
+  },
+  {
+   "fieldname": "column_break_ndmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "near_to",
+   "fieldtype": "Data",
+   "label": "Near to"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "section_break_adbk",
+   "fieldtype": "Section Break",
+   "label": "Family members"
+  },
+  {
+   "depends_on": "eval:doc.father_is_dead == 0",
+   "fieldname": "family_members",
    "fieldtype": "Table",
-   "label": "Members",
-   "options": "Family Members"
+   "label": "Make sure to fill remaining fields with edit",
+   "options": "Family members"
+  },
+  {
+   "fieldname": "section_break_eupj",
+   "fieldtype": "Section Break",
+   "label": "Health condition"
+  },
+  {
+   "fieldname": "health_condition",
+   "fieldtype": "Table",
+   "label": "Make sure to fill remaining fields with edit",
+   "options": "Health condition"
+  },
+  {
+   "fieldname": "section_break_jsgr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "house_status",
+   "fieldtype": "Select",
+   "label": "House status",
+   "options": "owned\nrented\nguests\ndisplaced"
+  },
+  {
+   "depends_on": "eval:doc.house_status == 'rented'",
+   "fieldname": "monthly_rent_price",
+   "fieldtype": "Currency",
+   "label": "Monthly rent price"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Int",
+   "label": "Room number"
+  },
+  {
+   "fieldname": "section_break_umom",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "economic_situation",
+   "fieldtype": "Table",
+   "label": "Economic situation",
+   "options": "Economic situation"
   },
   {
    "default": "0",
@@ -65,225 +184,112 @@
   },
   {
    "depends_on": "debt",
-   "fieldname": "debt_section",
-   "fieldtype": "Section Break",
-   "label": "Debt"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "total_ammount",
+   "fieldname": "debt_amount",
    "fieldtype": "Currency",
-   "label": "Total Ammount"
+   "label": "Debt amount"
   },
   {
    "depends_on": "debt",
-   "fieldname": "monthly_ammount",
-   "fieldtype": "Currency",
-   "label": "Monthly Ammount "
+   "fieldname": "cause",
+   "fieldtype": "Data",
+   "label": "Cause"
   },
   {
    "depends_on": "debt",
-   "fieldname": "reason",
-   "fieldtype": "Data",
-   "label": "Reason"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "lender",
-   "fieldtype": "Data",
-   "label": "Lender"
-  },
-  {
-   "fieldname": "address_section",
-   "fieldtype": "Section Break",
-   "label": "Address "
-  },
-  {
-   "fieldname": "city",
+   "fieldname": "payment",
    "fieldtype": "Select",
-   "label": "City",
-   "options": "Tripoli\nBeirut\nSayda"
+   "label": "Payment",
+   "options": "constantly\ntranscendent"
   },
   {
-   "fieldname": "zone",
-   "fieldtype": "Data",
-   "label": "Zone"
-  },
-  {
-   "fieldname": "street",
-   "fieldtype": "Data",
-   "label": "Street"
-  },
-  {
-   "fieldname": "near",
-   "fieldtype": "Data",
-   "label": "Near"
-  },
-  {
-   "fieldname": "column_break_ix0vh",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "building",
-   "fieldtype": "Data",
-   "label": "Building"
-  },
-  {
-   "fieldname": "floor",
-   "fieldtype": "Int",
-   "label": "Floor"
-  },
-  {
-   "fieldname": "mobile_num",
-   "fieldtype": "Phone",
-   "label": "Mobile Num"
-  },
-  {
-   "fieldname": "phone_num",
-   "fieldtype": "Phone",
-   "label": "Phone Num"
-  },
-  {
-   "fieldname": "column_break_cas47",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ownership_status",
-   "fieldtype": "Select",
-   "label": "Ownership Status",
-   "options": "Owned\nRented\nOther"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
-  },
-  {
-   "fieldname": "rent_price",
-   "fieldtype": "Currency",
-   "label": "Rent Price"
-  },
-  {
-   "fieldname": "room_num",
-   "fieldtype": "Int",
-   "label": "Room Num"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Very Bad\nBad\nOk\nGood\nVery Good"
-  },
-  {
-   "fieldname": "section_break_dpfaw",
+   "fieldname": "section_break_psxa",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "comment_explanation",
-   "fieldtype": "HTML",
-   "label": "Comment Explanation",
-   "options": "<h6>Filler comments about house status</h6>"
+   "fieldname": "hlep",
+   "fieldtype": "Table",
+   "label": "Help",
+   "options": "External Income source"
+  },
+  {
+   "fieldname": "section_break_eag6",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "comments",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Text",
    "label": "Comments"
   },
   {
-   "fieldname": "mou3il_section",
-   "fieldtype": "Section Break",
-   "label": "Mou3il "
+   "fieldname": "column_break_euqw",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "the_mou3il",
+   "fieldname": "administration_decision",
+   "fieldtype": "Small Text",
+   "label": "Administration decision"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "father",
    "fieldtype": "Link",
-   "label": "The Mou3il",
-   "options": "Person"
+   "label": "Father",
+   "options": "Father"
   },
   {
-   "fieldname": "moustawa_l_ri3aya",
-   "fieldtype": "Select",
-   "label": "Moustawa l ri3aya",
-   "options": "Ok\nNes Nes\nVery Good"
+   "fieldname": "mother",
+   "fieldtype": "Link",
+   "label": "Mother",
+   "options": "Mother"
   },
   {
-   "fieldname": "ri3aye_duration",
-   "fieldtype": "Select",
-   "label": "Ri3aye Duration",
-   "options": "Moustamera\nMoutakati3a"
+   "depends_on": "father_is_dead",
+   "fieldname": "children",
+   "fieldtype": "Table MultiSelect",
+   "label": "Orphans",
+   "options": "Children"
   },
   {
-   "fieldname": "religion_status_section",
-   "fieldtype": "Section Break",
-   "label": "Religion Status"
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "Provider"
   },
   {
-   "default": "0",
-   "fieldname": "dourous_3lm_shar3i",
-   "fieldtype": "Check",
-   "label": "Dourous 3lm shar3i"
+   "depends_on": "father_is_dead",
+   "fieldname": "relatives",
+   "fieldtype": "Table",
+   "label": "Relatives",
+   "options": "Relatives"
   },
   {
-   "depends_on": "dourous_3lm_shar3i",
-   "fieldname": "details1",
-   "fieldtype": "Text",
-   "label": "Details1"
-  },
-  {
-   "default": "0",
-   "fieldname": "mou7aramet_zahira_2a8ani_tabaroj_soufour",
-   "fieldtype": "Check",
-   "label": "Mou7aramet zahira (2a8ani, tabaroj, soufour)"
-  },
-  {
-   "depends_on": "mou7aramet_zahira_2a8ani_tabaroj_soufour",
-   "fieldname": "details2",
-   "fieldtype": "Text",
-   "label": "Details2"
-  },
-  {
-   "default": "0",
-   "fieldname": "dawrat_diniye",
-   "fieldtype": "Check",
-   "label": "Dawrat diniye"
-  },
-  {
-   "depends_on": "dawrat_diniye",
-   "fieldname": "details3",
-   "fieldtype": "Text",
-   "label": "Details3"
-  },
-  {
-   "default": "0",
-   "fieldname": "other_institution",
-   "fieldtype": "Check",
-   "label": "Other institution"
-  },
-  {
-   "depends_on": "other_institution",
-   "fieldname": "details4",
+   "fieldname": "receiver",
    "fieldtype": "Data",
-   "label": "Details4"
+   "label": "Receiver"
   },
   {
-   "fieldname": "section_break_fsnyr",
+   "fieldname": "column_break_wpuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dptu",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "filler_comments",
-   "fieldtype": "Text Editor",
-   "label": "Filler Comments"
-  },
-  {
-   "fieldname": "financial_study",
-   "fieldtype": "Table",
-   "label": "Financial Study",
-   "options": "Financial studies"
+   "default": "0",
+   "fetch_from": "father.is_dead",
+   "fieldname": "father_is_dead",
+   "fieldtype": "Check",
+   "label": "Father is dead"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-11 12:14:29.094379",
+ "modified": "2023-07-07 02:02:52.701438",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",
