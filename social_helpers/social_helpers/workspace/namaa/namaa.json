@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"ixfcfG9uaz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa</span>\",\"col\":12}},{\"id\":\"9Zh9qr4r3G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Performance\",\"col\":3}},{\"id\":\"rlBU83THvk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"new Orphan\",\"col\":3}},{\"id\":\"gqDe3cS2ZJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"new Emergency case\",\"col\":3}},{\"id\":\"KAcBHjSE5V\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"9xvvHeKbqj\",\"type\":\"card\",\"data\":{\"card_name\":\"Orphan Family\",\"col\":4}},{\"id\":\"_V1LPvG5j9\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Families in Need\",\"col\":4}},{\"id\":\"kIPrCsoYvJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Family Count\",\"col\":4}},{\"id\":\"ggDf2GUVuf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Sponsorships\",\"col\":4}},{\"id\":\"3AgeHeN2dT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Expiring Sponsorships\",\"col\":4}},{\"id\":\"QONmnG7_Nj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No Sponsor\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Orphans by country",
+   "label": "Orphans by country"
+  }
+ ],
+ "content": "[{\"id\":\"ixfcfG9uaz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa</span>\",\"col\":12}},{\"id\":\"9Zh9qr4r3G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Performance\",\"col\":3}},{\"id\":\"gqDe3cS2ZJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"new Family\",\"col\":3}},{\"id\":\"rlBU83THvk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"new Orphan\",\"col\":3}},{\"id\":\"mxk5LEyoEV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Family Reporting\",\"col\":3}},{\"id\":\"UXXIqgdkfl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Sponsorships</b></span>\",\"col\":12}},{\"id\":\"ggDf2GUVuf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Sponsorships\",\"col\":4}},{\"id\":\"3AgeHeN2dT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Expiring Sponsorships\",\"col\":4}},{\"id\":\"QONmnG7_Nj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Orphan Count\",\"col\":4}},{\"id\":\"md-aLTFiiW\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Orphans by country\",\"col\":12}},{\"id\":\"KAcBHjSE5V\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"9xvvHeKbqj\",\"type\":\"card\",\"data\":{\"card_name\":\"Orphan\",\"col\":4}},{\"id\":\"_V1LPvG5j9\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Emergency Cases\",\"col\":4}},{\"id\":\"kIPrCsoYvJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Family Count\",\"col\":4}}]",
  "creation": "2023-06-11 22:10:38.867310",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +20,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Orphan Family",
+   "label": "Orphan",
    "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
@@ -43,7 +48,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Orphan",
+   "label": "Orphans",
    "link_count": 0,
    "link_to": "Orphan",
    "link_type": "DocType",
@@ -51,7 +56,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-06-24 17:35:07.148865",
+ "modified": "2023-07-12 23:16:07.091072",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Namaa",
@@ -61,16 +66,16 @@
    "number_card_name": "Family count"
   },
   {
+   "label": "Orphan Count",
+   "number_card_name": "Orphan Count"
+  },
+  {
    "label": "Active Sponsorships",
    "number_card_name": "Active Sponsorsips"
   },
   {
    "label": "Expiring Sponsorships",
    "number_card_name": "About To Expire"
-  },
-  {
-   "label": "No Sponsor",
-   "number_card_name": "Orphans without sponsor"
   }
  ],
  "owner": "Administrator",
@@ -78,11 +83,16 @@
  "public": 1,
  "quick_lists": [
   {
-   "document_type": "Family in need",
-   "label": "Families in Need"
+   "document_type": "Emergency case",
+   "label": "Emergency Cases"
   }
  ],
- "roles": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "Supplier"
+  }
+ ],
  "sequence_id": 1.0,
  "shortcuts": [
   {
@@ -93,17 +103,24 @@
    "type": "Dashboard"
   },
   {
-   "color": "Green",
-   "doc_view": "New",
-   "label": "new Orphan",
-   "link_to": "Orphan",
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "Family Reporting",
+   "link_to": "Family",
    "type": "DocType"
   },
   {
    "color": "Grey",
    "doc_view": "New",
-   "label": "new Emergency case",
-   "link_to": "Emergency case",
+   "label": "new Family",
+   "link_to": "Family",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "New",
+   "label": "new Orphan",
+   "link_to": "Orphan",
    "type": "DocType"
   }
  ],
