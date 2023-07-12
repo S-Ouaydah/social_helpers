@@ -44,8 +44,7 @@
   "remaining_amount",
   "section_break_jzo9",
   "column_break_s3kh",
-  "details",
-  "filler_comments"
+  "details"
  ],
  "fields": [
   {
@@ -224,11 +223,6 @@
    "label": "Details"
   },
   {
-   "fieldname": "filler_comments",
-   "fieldtype": "Small Text",
-   "label": "Filler comments"
-  },
-  {
    "fieldname": "form_filling_date",
    "fieldtype": "Date",
    "label": "Form Filling Date"
@@ -245,7 +239,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 17:16:18.025438",
+ "modified": "2023-07-12 22:54:41.037724",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Emergency case",

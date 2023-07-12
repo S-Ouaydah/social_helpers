@@ -148,7 +148,7 @@
   {
    "fieldname": "house_status",
    "fieldtype": "Select",
-   "label": "House status",
+   "label": "House Status",
    "options": "owned\nrented\nguests\ndisplaced"
   },
   {
@@ -291,7 +291,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-12 21:57:00.895250",
+ "modified": "2023-07-12 22:40:57.098294",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",

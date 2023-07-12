@@ -20,7 +20,7 @@
   "social_number_orphan",
   "gender",
   "adult",
-  "both_parent_dead",
+  "both_parents_dead",
   "health_condition",
   "chronic_diseases",
   "disease_description",
@@ -84,7 +84,6 @@
   "column_break_liuo",
   "filler_name",
   "filling_date",
-  "filler_comments",
   "center"
  ],
  "fields": [
@@ -342,11 +341,6 @@
    "label": "Specify please"
   },
   {
-   "fieldname": "filler_comments",
-   "fieldtype": "Small Text",
-   "label": "Filler comments"
-  },
-  {
    "default": "0",
    "fieldname": "does_the_orphan_go_to_other_organization",
    "fieldtype": "Check",
@@ -511,12 +505,6 @@
    "label": "Character"
   },
   {
-   "default": "0",
-   "fieldname": "both_parent_dead",
-   "fieldtype": "Check",
-   "label": "Both parent dead"
-  },
-  {
    "fieldname": "school_transportation_cost",
    "fieldtype": "Currency",
    "label": "School Transportation cost"
@@ -526,6 +514,12 @@
    "fieldname": "adult",
    "fieldtype": "Check",
    "label": "Adult"
+  },
+  {
+   "default": "0",
+   "fieldname": "both_parents_dead",
+   "fieldtype": "Check",
+   "label": "Both parents dead"
   }
  ],
  "image_field": "id_photo",
@@ -547,7 +541,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-07-12 21:57:37.587781",
+ "modified": "2023-07-12 22:31:21.261454",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
