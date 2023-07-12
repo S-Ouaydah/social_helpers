@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{father}'s family",
  "creation": "2023-07-07 01:23:49.945509",
  "default_view": "List",
  "doctype": "DocType",
@@ -18,13 +19,13 @@
   "father_is_dead",
   "mother",
   "column_break_wpuz",
-  "children",
+  "orphans",
   "provider",
   "section_break_dptu",
   "relatives",
   "family_members",
   "address_section",
-  "address",
+  "city",
   "region",
   "street",
   "building_name",
@@ -37,7 +38,7 @@
   "section_break_jsgr",
   "house_status",
   "monthly_rent_price",
-  "room_number",
+  "number_of_rooms",
   "section_break_umom",
   "economic_situation",
   "debt",
@@ -81,11 +82,6 @@
   {
    "fieldname": "address_section",
    "fieldtype": "Section Break",
-   "label": "Address"
-  },
-  {
-   "fieldname": "address",
-   "fieldtype": "Data",
    "label": "Address"
   },
   {
@@ -160,11 +156,6 @@
    "fieldname": "monthly_rent_price",
    "fieldtype": "Currency",
    "label": "Monthly rent price"
-  },
-  {
-   "fieldname": "room_number",
-   "fieldtype": "Int",
-   "label": "Room number"
   },
   {
    "fieldname": "section_break_umom",
@@ -247,13 +238,6 @@
    "options": "Mother"
   },
   {
-   "depends_on": "father_is_dead",
-   "fieldname": "children",
-   "fieldtype": "Table MultiSelect",
-   "label": "Orphans",
-   "options": "Children"
-  },
-  {
    "fieldname": "provider",
    "fieldtype": "Link",
    "label": "Provider",
@@ -284,15 +268,34 @@
    "fetch_from": "father.is_dead",
    "fieldname": "father_is_dead",
    "fieldtype": "Check",
-   "label": "Father is dead"
+   "label": "Father is dead",
+   "read_only": 1
+  },
+  {
+   "depends_on": "father_is_dead",
+   "fieldname": "orphans",
+   "fieldtype": "Table MultiSelect",
+   "label": "Orphans",
+   "options": "Children"
+  },
+  {
+   "fieldname": "number_of_rooms",
+   "fieldtype": "Int",
+   "label": "Number of rooms"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-07 02:02:52.701438",
+ "modified": "2023-07-12 21:57:00.895250",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

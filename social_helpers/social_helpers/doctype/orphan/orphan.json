@@ -188,21 +188,25 @@
    "label": "Address"
   },
   {
+   "fetch_from": "family_details.city",
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City"
   },
   {
+   "fetch_from": "family_details.region",
    "fieldname": "region",
    "fieldtype": "Data",
    "label": "Region"
   },
   {
+   "fetch_from": "family_details.street",
    "fieldname": "street",
    "fieldtype": "Data",
    "label": "Street"
   },
   {
+   "fetch_from": "family_details.near_to",
    "fieldname": "near_to",
    "fieldtype": "Data",
    "label": "Near to"
@@ -212,16 +216,19 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "family_details.building_name",
    "fieldname": "building_name",
    "fieldtype": "Data",
    "label": "Building name"
   },
   {
+   "fetch_from": "family_details.floor",
    "fieldname": "floor",
    "fieldtype": "Data",
    "label": "Floor"
   },
   {
+   "fetch_from": "family_details.phone_number",
    "fieldname": "phone_number",
    "fieldtype": "Phone",
    "label": "Phone Number"
@@ -432,7 +439,7 @@
    "fieldname": "family_details",
    "fieldtype": "Link",
    "label": "Family details",
-   "options": "Orphans Family"
+   "options": "Family"
   },
   {
    "fieldname": "administration_comments",
@@ -540,7 +547,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-06-24 16:35:37.182415",
+ "modified": "2023-07-12 21:57:37.587781",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
