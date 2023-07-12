@@ -148,7 +148,7 @@
   {
    "fieldname": "house_status",
    "fieldtype": "Select",
-   "label": "House Status",
+   "label": "House status",
    "options": "owned\nrented\nguests\ndisplaced"
   },
   {
@@ -290,8 +290,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-07-12 22:40:57.098294",
+ "links": [
+  {
+   "link_doctype": "Material Donation",
+   "link_fieldname": "Family"
+  }
+ ],
+ "modified": "2023-07-12 23:40:14.321683",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",
