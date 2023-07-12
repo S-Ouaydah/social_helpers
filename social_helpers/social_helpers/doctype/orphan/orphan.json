@@ -541,7 +541,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-07-12 22:31:21.261454",
+ "modified": "2023-07-12 23:31:36.505270",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
@@ -563,5 +563,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "translated_doctype": 1
 }
