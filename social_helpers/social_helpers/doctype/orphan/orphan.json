@@ -43,12 +43,6 @@
   "floor",
   "phone_number",
   "mobile_number",
-  "father_tab",
-  "father_info_section",
-  "father",
-  "mother_tab",
-  "mother_info_section",
-  "mother",
   "family_tab",
   "family_details",
   "house_status_section",
@@ -72,6 +66,12 @@
   "specify_please_3",
   "does_the_orphan_go_to_other_organization",
   "specify_please_4",
+  "father_tab",
+  "father_info_section",
+  "father",
+  "mother_tab",
+  "mother_info_section",
+  "mother",
   "provider_tab",
   "provider_info_section",
   "who_is_the_provider",
@@ -88,6 +88,7 @@
  ],
  "fields": [
   {
+   "fetch_from": "family_details.father",
    "fieldname": "father",
    "fieldtype": "Link",
    "label": "Father",
@@ -397,6 +398,7 @@
    "label": "Mother info"
   },
   {
+   "fetch_from": "family_details.mother",
    "fieldname": "mother",
    "fieldtype": "Link",
    "label": "Mother",
@@ -541,7 +543,7 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-07-12 23:31:36.505270",
+ "modified": "2023-07-15 23:11:03.263660",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",

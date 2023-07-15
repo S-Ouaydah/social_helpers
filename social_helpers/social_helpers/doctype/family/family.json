@@ -8,12 +8,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "filler_name",
-  "filling_date",
-  "column_break_vewu",
+  "column_break_qarg",
   "receiver",
+  "mobile_number",
+  "column_break_vewu",
   "nationality",
   "social_number",
+  "family_members_count",
+  "address_section",
+  "city",
+  "region",
+  "street",
+  "building_name",
+  "column_break_ndmn",
+  "floor",
+  "near_to",
+  "phone_number",
   "section_break_adbk",
   "father",
   "father_is_dead",
@@ -24,15 +34,6 @@
   "section_break_dptu",
   "relatives",
   "family_members",
-  "address_section",
-  "city",
-  "region",
-  "street",
-  "building_name",
-  "column_break_ndmn",
-  "floor",
-  "near_to",
-  "phone_number",
   "section_break_eupj",
   "health_condition",
   "section_break_jsgr",
@@ -50,6 +51,8 @@
   "section_break_eag6",
   "comments",
   "column_break_euqw",
+  "filler_name",
+  "filling_date",
   "administration_decision",
   "date"
  ],
@@ -115,7 +118,7 @@
   },
   {
    "fieldname": "phone_number",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "label": "Phone number"
   },
   {
@@ -223,7 +226,7 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Decision date"
   },
   {
    "fieldname": "father",
@@ -287,6 +290,20 @@
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City"
+  },
+  {
+   "fieldname": "column_break_qarg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "family_members_count",
+   "fieldtype": "Int",
+   "label": "Family members count"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile number"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -296,7 +313,7 @@
    "link_fieldname": "Family"
   }
  ],
- "modified": "2023-07-12 23:40:14.321683",
+ "modified": "2023-07-15 23:04:30.401933",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",
