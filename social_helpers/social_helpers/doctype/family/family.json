@@ -8,7 +8,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "column_break_qarg",
   "receiver",
   "mobile_number",
   "column_break_vewu",
@@ -24,20 +23,23 @@
   "floor",
   "near_to",
   "phone_number",
+  "family_members_tab",
   "section_break_adbk",
   "father",
   "father_is_dead",
-  "mother",
   "column_break_wpuz",
-  "orphans",
+  "mother",
   "provider",
   "section_break_dptu",
+  "orphans",
   "relatives",
   "family_members",
+  "health_condition_tab",
   "section_break_eupj",
   "health_condition",
+  "economic_situation_tab",
   "section_break_jsgr",
-  "house_status",
+  "ownership",
   "monthly_rent_price",
   "number_of_rooms",
   "section_break_umom",
@@ -48,6 +50,7 @@
   "payment",
   "section_break_psxa",
   "hlep",
+  "administration_tab",
   "section_break_eag6",
   "comments",
   "column_break_euqw",
@@ -123,8 +126,7 @@
   },
   {
    "fieldname": "section_break_adbk",
-   "fieldtype": "Section Break",
-   "label": "Family members"
+   "fieldtype": "Section Break"
   },
   {
    "depends_on": "eval:doc.father_is_dead == 0",
@@ -147,12 +149,6 @@
   {
    "fieldname": "section_break_jsgr",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "house_status",
-   "fieldtype": "Select",
-   "label": "House status",
-   "options": "owned\nrented\nguests\ndisplaced"
   },
   {
    "depends_on": "eval:doc.house_status == 'rented'",
@@ -264,7 +260,8 @@
   },
   {
    "fieldname": "section_break_dptu",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Family members"
   },
   {
    "default": "0",
@@ -277,7 +274,7 @@
   {
    "depends_on": "father_is_dead",
    "fieldname": "orphans",
-   "fieldtype": "Table MultiSelect",
+   "fieldtype": "Table",
    "label": "Orphans",
    "options": "Children"
   },
@@ -292,10 +289,6 @@
    "label": "City"
   },
   {
-   "fieldname": "column_break_qarg",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "family_members_count",
    "fieldtype": "Int",
    "label": "Family members count"
@@ -304,6 +297,33 @@
    "fieldname": "mobile_number",
    "fieldtype": "Phone",
    "label": "Mobile number"
+  },
+  {
+   "fieldname": "family_members_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family members"
+  },
+  {
+   "fieldname": "health_condition_tab",
+   "fieldtype": "Tab Break",
+   "label": "Health condition"
+  },
+  {
+   "depends_on": "eval:doc.father_is_dead == 0",
+   "fieldname": "economic_situation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Economic situation"
+  },
+  {
+   "fieldname": "administration_tab",
+   "fieldtype": "Tab Break",
+   "label": "Administration"
+  },
+  {
+   "fieldname": "ownership",
+   "fieldtype": "Select",
+   "label": "Ownership",
+   "options": "owned\nrented\nguests\ndisplaced"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -313,7 +333,7 @@
    "link_fieldname": "Family"
   }
  ],
- "modified": "2023-07-15 23:04:30.401933",
+ "modified": "2023-07-16 01:43:20.785268",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Family",
