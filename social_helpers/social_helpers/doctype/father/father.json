@@ -29,8 +29,10 @@
   {
    "fieldname": "nationality",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Nationality",
-   "options": "Lebanese\nSyrian\nPalestinian"
+   "options": "Lebanese\nSyrian\nPalestinian",
+   "reqd": 1
   },
   {
    "fieldname": "date_of_birth",
@@ -56,6 +58,7 @@
    "depends_on": "is_dead",
    "fieldname": "date_of_death",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date of death"
   },
   {
@@ -109,18 +112,22 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full name"
+   "in_list_view": 1,
+   "label": "Full name",
+   "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "is_dead",
    "fieldtype": "Check",
-   "label": "Is Dead"
+   "in_list_view": 1,
+   "label": "Is Dead",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-07 01:50:46.967017",
+ "modified": "2023-07-16 16:45:05.876996",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Father",
@@ -140,6 +147,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

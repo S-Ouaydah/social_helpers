@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class OrphansFamily(Document):
+class OrphansFamily-old(Document):
 	pass

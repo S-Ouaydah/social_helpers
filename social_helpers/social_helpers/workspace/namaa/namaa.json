@@ -56,7 +56,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-07-12 23:16:07.091072",
+ "modified": "2023-07-16 15:41:10.385826",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Namaa",
@@ -93,7 +93,7 @@
    "role": "Supplier"
   }
  ],
- "sequence_id": 1.0,
+ "sequence_id": 2.0,
  "shortcuts": [
   {
    "color": "Grey",

@@ -1,0 +1,22 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-07-16 18:53:44.250661",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-07-16 18:53:44.250661",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Non Sponsored Families",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select center,region,father,tabFather.nationality,tabFather.social_number,tabSponsorship.start_date,tabSponsorship.end_date\nfrom tabFamily\njoin tabSponsorship on tabSponsorship.family = tabFamily.name\nwhere %(date_on)s >= tabSponsorship.start_date\nand %(date_on)s >= tabSponsorship.end_date\ngroup by father",
+ "ref_doctype": "Family",
+ "report_name": "Non Sponsored Families",
+ "report_type": "Query Report",
+ "roles": []
+}

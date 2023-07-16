@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFamilyinneed(FrappeTestCase):
+class TestFamilyinneed-old(FrappeTestCase):
 	pass

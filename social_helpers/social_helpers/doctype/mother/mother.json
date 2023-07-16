@@ -18,7 +18,7 @@
   "work",
   "what_is_her_job",
   "salary",
-  "care_period",
+  "takes_carte_of_children",
   "religion_status"
  ],
  "fields": [
@@ -56,12 +56,6 @@
    "label": "Salary"
   },
   {
-   "fieldname": "care_period",
-   "fieldtype": "Select",
-   "label": "Care period",
-   "options": "continuous\ndiscontinuous"
-  },
-  {
    "fieldname": "religion_status",
    "fieldtype": "Data",
    "label": "Religion status"
@@ -86,11 +80,17 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full name"
+  },
+  {
+   "default": "0",
+   "fieldname": "takes_carte_of_children",
+   "fieldtype": "Check",
+   "label": "Takes care of children"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-24 17:47:22.349936",
+ "modified": "2023-07-16 16:20:14.497855",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Mother",

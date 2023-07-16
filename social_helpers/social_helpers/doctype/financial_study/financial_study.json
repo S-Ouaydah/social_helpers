@@ -8,7 +8,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "orphan",
   "family",
   "column_break_ibml",
   "date",
@@ -34,12 +33,6 @@
   "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "orphan",
-   "fieldtype": "Link",
-   "label": "Orphan",
-   "options": "Orphan"
-  },
   {
    "fieldname": "date",
    "fieldtype": "Date",
@@ -109,7 +102,7 @@
    "fieldname": "family",
    "fieldtype": "Link",
    "label": "Family",
-   "options": "Orphans Family"
+   "options": "Family"
   },
   {
    "fieldname": "other_sources",
@@ -166,7 +159,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-19 16:09:09.540920",
+ "modified": "2023-07-16 13:53:27.565293",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Financial Study",
