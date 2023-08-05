@@ -33,50 +33,56 @@
   "grade",
   "school_tuition",
   "school_transportation_cost",
-  "address_section",
+  "does_not_live_with_family",
+  "family_address_section",
   "city",
   "region",
   "street",
   "near_to",
-  "column_break_ddtb",
+  "column_break_kure",
   "building_name",
   "floor",
   "phone_number",
-  "mobile_number",
+  "address_section",
+  "city_orphan",
+  "region_orphan",
+  "street_orphan",
+  "near_to_orphan",
+  "column_break_ddtb",
+  "building_name_orphan",
+  "floor_orphan",
+  "phone_number_orphan",
+  "mobile_number_orphan",
+  "provider_tab",
+  "provider_info_section",
+  "who_is_the_provider",
+  "how_are_expenses_secured_please_specify",
+  "provider",
+  "family_religious_status_tab",
+  "family_details",
+  "general_info_about_the_family_section",
+  "do_they_go_to_sharia",
+  "specify_please_1",
+  "is_there_clear_mouharamet",
+  "specify_please_2",
+  "column_break_diaf",
+  "do_the_children_go_to_religious_summer_camp",
+  "specify_please_3",
+  "does_the_orphan_go_to_other_organization",
+  "specify_please_4",
   "father_tab",
   "father_info_section",
   "father",
   "mother_tab",
   "mother_info_section",
   "mother",
-  "family_tab",
-  "family_details",
-  "house_status_section",
+  "house_status_tab",
   "house_status",
-  "filler_comment_on_house_status",
-  "column_break_kpbb",
   "ownership",
   "monthly_rent_price",
-  "precise_situation",
-  "general_info_about_the_family_section",
-  "debt",
-  "debt_ammount",
-  "to_whom",
-  "monthly_payment_ammount",
-  "cause",
-  "do_they_go_to_sharia",
-  "specify_please_1",
-  "is_there_clear_mouharamet",
-  "specify_please_2",
-  "do_the_children_go_to_religious_summer_camp",
-  "specify_please_3",
-  "does_the_orphan_go_to_other_organization",
-  "specify_please_4",
-  "provider_tab",
-  "provider_info_section",
-  "who_is_the_provider",
-  "how_are_expenses_secured_please_specify",
-  "provider",
+  "column_break_aaid",
+  "number_of_rooms",
+  "filler_comment_on_house_status",
   "details_tab",
   "section_for_adminstration_section",
   "administration_decision",
@@ -88,10 +94,12 @@
  ],
  "fields": [
   {
+   "fetch_from": "family_details.father",
    "fieldname": "father",
    "fieldtype": "Link",
    "label": "Father",
-   "options": "Father"
+   "options": "Father",
+   "read_only": 1
   },
   {
    "fieldname": "father_info_section",
@@ -124,9 +132,11 @@
    "label": "Place of birth"
   },
   {
+   "fetch_from": "father.social_number",
    "fieldname": "social_number_orphan",
    "fieldtype": "Data",
-   "label": "Social number"
+   "label": "Social number",
+   "read_only": 1
   },
   {
    "fieldname": "gender",
@@ -182,6 +192,7 @@
    "label": "Section for administration"
   },
   {
+   "depends_on": "does_not_live_with_family",
    "fieldname": "address_section",
    "fieldtype": "Section Break",
    "label": "Address"
@@ -207,51 +218,64 @@
   },
   {
    "default": "0",
+   "fetch_from": "family_details.do_they_go_to_sharia_studies",
    "fieldname": "do_they_go_to_sharia",
    "fieldtype": "Check",
-   "label": "Do they go to sharia studies"
+   "label": "Do they go to sharia studies",
+   "read_only": 1
   },
   {
    "depends_on": "do_they_go_to_sharia",
+   "fetch_from": "family_details.specify_please_1",
    "fieldname": "specify_please_1",
    "fieldtype": "Small Text",
-   "label": "Specify please"
+   "label": "Specify please",
+   "read_only": 1
   },
   {
    "default": "0",
+   "fetch_from": "family_details.is_there_clear_prohibitions",
    "fieldname": "is_there_clear_mouharamet",
    "fieldtype": "Check",
-   "label": "Is there clear prohibitions"
+   "label": "Is there clear prohibitions",
+   "read_only": 1
   },
   {
    "depends_on": "is_there_clear_mouharamet",
+   "fetch_from": "family_details.specify_please_2",
    "fieldname": "specify_please_2",
    "fieldtype": "Small Text",
    "label": "Specify please"
   },
   {
    "default": "0",
+   "fetch_from": "family_details.do_the_children_go_to_religious_summer_camp",
    "fieldname": "do_the_children_go_to_religious_summer_camp",
    "fieldtype": "Check",
-   "label": "Do the children go to religious summer camp"
+   "label": "Do the children go to religious summer camp",
+   "read_only": 1
   },
   {
    "depends_on": "do_the_children_go_to_religious_summer_camp",
+   "fetch_from": "family_details.specify_please_3",
    "fieldname": "specify_please_3",
    "fieldtype": "Small Text",
    "label": "Specify please"
   },
   {
    "depends_on": "does_the_orphan_go_to_other_organization",
+   "fetch_from": "family_details.specify_please_4",
    "fieldname": "specify_please_4",
    "fieldtype": "Small Text",
    "label": "Specify please"
   },
   {
    "default": "0",
+   "fetch_from": "family_details.does_the_orphan_go_to_other_organization",
    "fieldname": "does_the_orphan_go_to_other_organization",
    "fieldtype": "Check",
-   "label": "Does the orphan go to other organization"
+   "label": "Does the orphan go to other organization",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_rhz3",
@@ -279,11 +303,13 @@
    "label": "Orphan"
   },
   {
+   "depends_on": "family_details",
    "fieldname": "father_tab",
    "fieldtype": "Tab Break",
    "label": "Father"
   },
   {
+   "depends_on": "family_details",
    "fieldname": "mother_tab",
    "fieldtype": "Tab Break",
    "label": "Mother"
@@ -299,10 +325,12 @@
    "label": "Mother info"
   },
   {
+   "fetch_from": "family_details.mother",
    "fieldname": "mother",
    "fieldtype": "Link",
    "label": "Mother",
-   "options": "Mother"
+   "options": "Mother",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.who_is_the_provider == 'other'",
@@ -352,7 +380,7 @@
    "fieldname": "school_type",
    "fieldtype": "Select",
    "label": "School type",
-   "options": "Public\nPrivate\nSemi public"
+   "options": "Public\nPrivate\nSemi public\nVocational public\nVocational private"
   },
   {
    "fieldname": "center",
@@ -404,132 +432,177 @@
    "label": "Both parents dead"
   },
   {
-   "fieldname": "house_status",
-   "fieldtype": "Rating"
+   "default": "0",
+   "fieldname": "does_not_live_with_family",
+   "fieldtype": "Check",
+   "label": "Does not live with family"
   },
   {
+   "fieldname": "family_religious_status_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family religious status"
+  },
+  {
+   "fieldname": "column_break_diaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "family_details",
+   "fieldname": "house_status_tab",
+   "fieldtype": "Tab Break",
+   "label": "House status"
+  },
+  {
+   "fetch_from": "family_details.house_status",
+   "fieldname": "house_status",
+   "fieldtype": "Rating",
+   "label": "House status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "family_details.ownership",
    "fieldname": "ownership",
    "fieldtype": "Select",
    "label": "Ownership",
-   "options": "owned\nrented\nother"
+   "options": "owned\nrented\nguests\ndisplaced",
+   "read_only": 1
   },
   {
-   "depends_on": "eval:doc.ownership == 'rented'",
+   "depends_on": "eval:doc.house_status == 'rented'",
+   "fetch_from": "family_details.monthly_rent_price",
    "fieldname": "monthly_rent_price",
    "fieldtype": "Currency",
-   "label": "Monthly rent price"
+   "label": "Monthly rent price",
+   "read_only": 1
   },
   {
+   "fieldname": "column_break_aaid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "family_details.number_of_rooms",
+   "fieldname": "number_of_rooms",
+   "fieldtype": "Int",
+   "label": "Number of rooms",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "family_details.filler_comment_on_house_status",
    "fieldname": "filler_comment_on_house_status",
    "fieldtype": "Small Text",
-   "label": "Filler comment on house status"
+   "label": "Filler comment on house status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": ".city",
+   "fieldname": "city_orphan",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fetch_from": ".region",
+   "fieldname": "region_orphan",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fetch_from": ".street",
+   "fieldname": "street_orphan",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fetch_from": ".near_to",
+   "fieldname": "near_to_orphan",
+   "fieldtype": "Data",
+   "label": "Near to"
+  },
+  {
+   "fetch_from": ".building_name",
+   "fieldname": "building_name_orphan",
+   "fieldtype": "Data",
+   "label": "Building name"
+  },
+  {
+   "fetch_from": ".floor",
+   "fieldname": "floor_orphan",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fetch_from": ".phone_number",
+   "fieldname": "phone_number_orphan",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "mobile_number_orphan",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "depends_on": "eval:doc.does_not_live_with_family == 0;",
+   "fieldname": "family_address_section",
+   "fieldtype": "Section Break",
+   "label": "Family address"
   },
   {
    "fetch_from": "family_details.city",
    "fieldname": "city",
    "fieldtype": "Data",
-   "label": "City"
+   "label": "City",
+   "read_only": 1
   },
   {
    "fetch_from": "family_details.region",
    "fieldname": "region",
    "fieldtype": "Data",
-   "label": "Region"
+   "label": "Region",
+   "read_only": 1
   },
   {
    "fetch_from": "family_details.street",
    "fieldname": "street",
    "fieldtype": "Data",
-   "label": "Street"
+   "label": "Street",
+   "read_only": 1
   },
   {
    "fetch_from": "family_details.near_to",
    "fieldname": "near_to",
    "fieldtype": "Data",
-   "label": "Near to"
+   "label": "Near to",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kure",
+   "fieldtype": "Column Break"
   },
   {
    "fetch_from": "family_details.building_name",
    "fieldname": "building_name",
    "fieldtype": "Data",
-   "label": "Building name"
+   "label": "Building name",
+   "read_only": 1
   },
   {
    "fetch_from": "family_details.floor",
    "fieldname": "floor",
    "fieldtype": "Data",
-   "label": "Floor"
+   "label": "Floor",
+   "read_only": 1
   },
   {
    "fetch_from": "family_details.phone_number",
    "fieldname": "phone_number",
-   "fieldtype": "Phone",
-   "label": "Phone Number"
-  },
-  {
-   "fieldname": "mobile_number",
-   "fieldtype": "Phone",
-   "label": "Mobile Number"
-  },
-  {
-   "fieldname": "family_tab",
-   "fieldtype": "Tab Break",
-   "label": "Family"
-  },
-  {
-   "fieldname": "house_status_section",
-   "fieldtype": "Section Break",
-   "label": "House Status"
-  },
-  {
-   "fieldname": "column_break_kpbb",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "eval:doc.ownership == 'other'",
-   "fieldname": "precise_situation",
-   "fieldtype": "Small Text",
-   "label": "Precise Situation"
-  },
-  {
-   "default": "0",
-   "fieldname": "debt",
-   "fieldtype": "Check",
-   "label": "Debt"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "debt_ammount",
-   "fieldtype": "Currency",
-   "label": "Debt amount"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "to_whom",
    "fieldtype": "Data",
-   "label": "To whom"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "monthly_payment_ammount",
-   "fieldtype": "Currency",
-   "label": "Monthly payment amount"
-  },
-  {
-   "depends_on": "debt",
-   "fieldname": "cause",
-   "fieldtype": "Small Text",
-   "label": "Cause"
+   "label": "Phone number",
+   "read_only": 1
   }
  ],
  "image_field": "id_photo",
  "index_web_pages_for_search": 1,
  "links": [
-  {
-   "group": "Studies",
-   "link_doctype": "Financial Study",
-   "link_fieldname": "orphan"
-  },
   {
    "group": "Sponsorships",
    "link_doctype": "Sponsorship",
@@ -541,7 +614,8 @@
    "link_fieldname": "orphan"
   }
  ],
- "modified": "2023-08-05 11:24:58.430777",
+ "max_attachments": 6,
+ "modified": "2023-07-16 18:33:34.998578",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",
@@ -559,18 +633,11 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Employee",
-   "share": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "translated_doctype": 1
 }
