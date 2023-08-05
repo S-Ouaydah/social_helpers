@@ -21,7 +21,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Orphan",
-   "link_count": 3,
+   "link_count": 4,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -54,9 +54,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "rep",
+   "link_count": 0,
+   "link_to": "Non Sponsored Orphans",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-07-13 11:48:15.448603",
+ "modified": "2023-08-05 11:01:53.902262",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Namaa",
@@ -93,7 +103,7 @@
    "role": "Supplier"
   }
  ],
- "sequence_id": 2.0,
+ "sequence_id": 1.0,
  "shortcuts": [
   {
    "color": "Grey",
