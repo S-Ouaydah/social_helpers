@@ -75,11 +75,15 @@
   {
    "fieldname": "country",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Country"
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "City"
   },
   {
@@ -93,8 +97,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-07-16 15:46:34.494686",
+ "links": [
+  {
+   "link_doctype": "Sponsorship",
+   "link_fieldname": "sponsor"
+  }
+ ],
+ "modified": "2023-08-05 10:19:11.786902",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Sponsor",
