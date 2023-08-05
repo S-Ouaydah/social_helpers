@@ -4,12 +4,12 @@ app_name = "social_helpers"
 app_title = "Social Helpers"
 app_publisher = "muslims IT"
 app_description = "Orphans applications and families help"
-app_email = "ismail.ouaydah@gmail.com"
+app_email = "salim.ouaydah@gmail.com"
 app_license = "MIT"
 
+app_logo_url="/assets/erpnext/images/namaa-logo.png"
 # Includes in <head>
 # ------------------
-
 # include js, css files in header of desk.html
 # app_include_css = "/assets/social_helpers/css/social_helpers.css"
 # app_include_js = "/assets/social_helpers/js/social_helpers.js"
