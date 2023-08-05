@@ -1,0 +1,132 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"LC4Jo634Se\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Namaa Wissama</span>\",\"col\":12}},{\"id\":\"AifxsMhngl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tXgglvYtcE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Quick Access<br></b></span>\",\"col\":12}},{\"id\":\"DnQzfmjxY4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Family\",\"col\":4}},{\"id\":\"0VWtcPJbdx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Search for orphans\",\"col\":4}},{\"id\":\"qwRZ7dA5lV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Emergency case\",\"col\":4}},{\"id\":\"n2uI2e5OAE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sponsors List\",\"col\":4}},{\"id\":\"yrt7q3dQol\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"qh6UkcpPPT\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports<br></span>\",\"col\":12}},{\"id\":\"Fk6aBm2DNP\",\"type\":\"card\",\"data\":{\"card_name\":\"Orphans Reports\",\"col\":4}},{\"id\":\"SN7ij0nzKZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Families Reports\",\"col\":4}},{\"id\":\"RST8vv3ViN\",\"type\":\"card\",\"data\":{\"card_name\":\"Sponsor Reports\",\"col\":4}}]",
+ "creation": "2023-07-16 15:40:03.111115",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Namaa Wissama",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Families Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Non Sponsored Families",
+   "link_count": 0,
+   "link_to": "Non Sponsored Families",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sponsored Families",
+   "link_count": 0,
+   "link_to": "Sponsored Families",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Orphans Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Non Sponsored Orphans",
+   "link_count": 0,
+   "link_to": "Non Sponsored Orphans",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sponsored Orphans",
+   "link_count": 0,
+   "link_to": "Sponsored Orphans",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sponsor Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Active Sponsors",
+   "link_count": 0,
+   "link_to": "Active Sponsors",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-05 11:02:02.589599",
+ "modified_by": "Administrator",
+ "module": "Social Helpers",
+ "name": "Namaa Wissama",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Search for orphans",
+   "link_to": "Orphan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sponsors List",
+   "link_to": "Sponsor",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "New",
+   "label": "New Emergency case",
+   "link_to": "Emergency case",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Family",
+   "link_to": "Family",
+   "type": "DocType"
+  }
+ ],
+ "title": "Namaa Wissama"
+}
