@@ -300,6 +300,7 @@
   {
    "fieldname": "orphan_tab",
    "fieldtype": "Tab Break",
+   "in_standard_filter": 1,
    "label": "Orphan"
   },
   {
@@ -557,6 +558,7 @@
    "fetch_from": "family_details.region",
    "fieldname": "region",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Region",
    "read_only": 1
   },
@@ -615,7 +617,7 @@
   }
  ],
  "max_attachments": 6,
- "modified": "2023-08-05 12:16:56.965489",
+ "modified": "2023-08-07 00:50:31.924667",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Orphan",

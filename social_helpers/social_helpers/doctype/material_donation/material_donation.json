@@ -10,7 +10,9 @@
  "field_order": [
   "project",
   "family",
-  "materials"
+  "materials",
+  "start_date",
+  "end_date"
  ],
  "fields": [
   {
@@ -29,11 +31,23 @@
    "fieldname": "materials",
    "fieldtype": "Text",
    "label": "Materials"
+  },
+  {
+   "fetch_from": "project.actual_start_date",
+   "fieldname": "start_date",
+   "fieldtype": "Read Only",
+   "label": "Start date"
+  },
+  {
+   "fetch_from": "project.actual_end_date",
+   "fieldname": "end_date",
+   "fieldtype": "Read Only",
+   "label": "End date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-12 23:39:17.234699",
+ "modified": "2023-08-07 01:08:12.128240",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Material Donation",

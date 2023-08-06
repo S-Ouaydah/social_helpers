@@ -119,7 +119,7 @@ Does the orphan go to other organization,هل اليتيم يتردد على ا�
 Specify please,الرجاء التفصيل,
 Family details,تفاصيل العائلة,
 Relation,صلة القرابة,
-Visitor name,اسم الزائر,
+Visitor name,اسم المندوب,
 Visit date,تاريخ الزيارة,
 Fixed Payments,المدفوعات الثابتة,
 House rent,أجرة المنزل,
@@ -234,3 +234,6 @@ Does not live with family,غير مقيم مع العائلة,
 Transfer type,نوع الحوالة,
 Cheque,شيك مصرفي,
 Participants,المشاركين,
+Sponsors List,لائحة بأسماء الكافلين,
+New Family,اضافة عائلة جديدة,
+New Emergency case,اضافة حالة طارئة,

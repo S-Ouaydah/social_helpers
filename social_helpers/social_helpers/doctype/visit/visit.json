@@ -28,7 +28,7 @@
   },
   {
    "fieldname": "visit_type",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Visit type",
    "options": "Orphan\nFamily"
   },
@@ -59,7 +59,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-16 14:06:39.460888",
+ "modified": "2023-08-07 00:40:55.487299",
  "modified_by": "Administrator",
  "module": "Social Helpers",
  "name": "Visit",
